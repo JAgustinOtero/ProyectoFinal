@@ -26,6 +26,10 @@ header nav ul{
   text-shadow: 1px ;
 }
 
+.text-bg-transparent{
+  background-color: transparent !important;
+}
+
 main{
   height: 300vh;
 }
@@ -34,9 +38,7 @@ main section{
   /* height: 100vh; */
 }
 
-.carousel-item{
-  width: 25% !important;
-}
+
 
 .carousel-inner img {
   margin: auto;
@@ -88,6 +90,14 @@ main section{
 
 footer{
   height: 20vh;
+}
+
+.w-40{
+  width: 40%;
+}
+
+.h-30{
+  height: 30%;
 }
 
 /* #index-body {
