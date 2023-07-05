@@ -9,13 +9,12 @@ body{
 }
 
 header{
-  height: 60vw;
-  background-position: center;
+  height: 120VH;
+  background-position: center TOP;
   background-image: url(../assets/images/portada.gif);
   background-repeat: no-repeat;
-  background-size: 100vw 60vw;
+  background-size: auto 120vh;
   text-shadow: 1px 1px 2px RGBA(13,110,253);
-  /* font-size: 1.2rem !important; */
 }
 
 header nav ul li ul{
@@ -31,7 +30,7 @@ header nav ul{
 }
 
 main{
-  height: 300vh;
+  /* height: 300vh; */
 }
 
 main section{
@@ -76,7 +75,7 @@ main section{
 }
 
 #products{
-  height: 150vh;
+  height: 100vh;
 }
 
 .card{
@@ -92,12 +91,17 @@ footer{
   height: 20vh;
 }
 
-.w-40{
-  width: 40%;
+.footer-card{
+  width: 375px;
+  height: 250px;
 }
 
-.h-30{
-  height: 30%;
+#services{
+  height: 150vh;
+}
+
+.card img{
+  height: 30rem;
 }
 
 /* #index-body {
