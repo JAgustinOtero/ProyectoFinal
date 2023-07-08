@@ -5,7 +5,7 @@
 }
 
 body{
-  height: 400vh;
+  /* height: 400vh; */
 }
 
 header{
@@ -103,6 +103,7 @@ footer{
 .card img{
   height: 30rem;
 }
+
 
 /* #index-body {
   height: 400vh;
