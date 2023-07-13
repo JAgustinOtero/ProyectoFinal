@@ -1,0 +1,35 @@
+#carouselMainIndex {
+
+    .carousel-indicators{
+        border: solid #000 0px !important;
+        border-radius: 5px !important;
+        height: 10px !important;
+        left: 25% !important;
+        width: 25% !important;
+
+        button{
+            margin: 0 !important;
+            width: 25%  !important;
+            height: 10px  !important;
+            border: 0px solid !important;
+            border-radius: 5px !important;
+            background-color: white !important;
+            opacity: 0 !important;
+        }
+
+        .active{
+            opacity: 1 !important;
+            height: 10px !important;
+            border-radius: 6px !important;
+            position: relative !important;
+            top: -2px;
+            height: 14px !important;
+        }
+    }
+    .carousel-inner
+    {
+        img {
+        margin: auto;
+        }
+    }
+  }

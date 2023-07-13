@@ -1,0 +1,20 @@
+@import "utilities/variables";
+
+@import "globals/reset";
+
+@import "layout/header";
+@import "layout/footer";
+@import "layout/grid";
+
+@import "views/contacto";
+@import "views/home";
+@import "views/productos";
+
+@import "components/card";
+@import "components/carousel";
+
+
+  .text-bg-transparent{
+    background-color: transparent !important;
+  }
+  

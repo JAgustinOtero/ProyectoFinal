@@ -1,0 +1,56 @@
+header{
+    height: 120VH;
+    background-position: center TOP;
+    background-image: url(../assets/images/portada.gif);
+    background-repeat: no-repeat;
+    background-size: auto 120vh;
+
+    
+    nav{
+        .menu{
+            &__logo{
+            display: none;
+            }
+        }
+        
+        ul{
+          text-shadow: 1px;
+          li{
+              ul{
+                text-shadow: 0px 0px 0px #000;
+              }
+          }
+        }
+    } 
+
+    .header__card{
+        width: 375px;
+        height: 250px;
+      }
+
+    
+}
+
+
+
+@media (min-width: 767.98px){
+  
+    header nav .menu__logo{
+      display: block;
+    }
+  
+    header{
+      text-shadow: 1px 1px 2px #000;
+    }
+  
+    .offcanvas .offcanvas-body {
+      flex-direction: row;
+      background-color: transparent !important;
+    }
+  
+    .offcanvas .offcanvas-body .navbar-nav{
+      align-items: center;
+    }
+  }
+  
+  
