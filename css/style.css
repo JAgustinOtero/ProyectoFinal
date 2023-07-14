@@ -92,7 +92,7 @@ footer {
   background-color: transparent !important; }
 
 .text-bg-primary {
-  background-color: RGBA(13, 110, 253, var(--bs-bg-opacity, 1)) !important !important; }
+  background-color: RGBA(13, 110, 253, var(--bs-bg-opacity, 1)) !important; }
 
 .text-bg-secondary {
   background-color: gray !important; }
