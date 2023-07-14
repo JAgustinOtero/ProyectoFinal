@@ -19,11 +19,11 @@
     <link rel="stylesheet" href="../css/style.css" />
     <title>Insumos</title>
   </head>
-  <body>
-    <header>
+  <body class="h-100">
+    <header class="insumos_header">
       <nav class="navbar navbar-expand-md">
         <div class="container-fluid">
-          <a id="logo" class="navbar-brand" href="../index.html">
+          <a id="logo" class="menu__logo navbar-brand" href="../index.html">
             <img src="../assets/images/logo.png" alt="Logo" class="d-inline-block align-text-center">
             <h4 class="d-inline-block align-text-top text-light">Empresa3D</h4>
           </a>
@@ -41,17 +41,20 @@
             </div>
             <div class="offcanvas-body text-bg-secondary">
               <ul class="navbar-nav justify-content-around flex-grow-1 pe-3 fs-5 m-4">
-                <li class="nav-item dropdown">
-                  <a class="nav-link link-light dropdown-toggle" href="../pages/Impresoras3D.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Impresoras 3D
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item text-dark" href="../pages/Impresoras3D.html">Ender 3</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item text-dark" href="../pages/Impresoras3D.html">Ender 3 V2</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item text-dark" href="../pages/Impresoras3D.html">Ender 3 S1</a></li>
-                  </ul>
+                <!-- DROPDOWN SPLIT-->
+                <li class="btn-group">
+                  <a type="button" class="btn text-light text-bg-transparent border-0 fs-5" href="../pages/Impresoras3D.html" >Impresoras3D</a>
+                  <button class="btn btn-danger dropdown-toggle dropdown-toggle-split text-bg-transparent border-0 fs-5" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="visually-hidden">Toggle Dropdown</span>
+                  </button>
+                <!-- FIN DROPDOWN -->
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item text-dark" href="../pages/modelos/ender3.html">Ender 3</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item text-dark" href="../pages/modelos/ender3V2.html">Ender 3 V2</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item text-dark" href="../pages/modelos/ender3S1.html">Ender 3 S1</a></li>
+                </ul>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link link-light" href="../pages/ServicioDeImpresion.html">Servicio De Impresion</a>
@@ -85,26 +88,125 @@
           </div>
         </div>
       </nav>
+      <div class="insumos_header__titulo d-flex flex-column justify-content-end align-items-start h-75 p-5 text-light">
+        <h1>Productos</h1>
+        <p>encontra lo que necesitas para tus impresoras marca Empresa3D</p>
+
+      </div>
     </header>
 
 
-    <main>
+    <main class="mainInsumos text-bg-secondary p-5">
       <section>
-        <h1>Productos</h1>
-        <h2>encontra lo que necesitas</h2>
-        <div><img src="" alt="producto1" /></div>
-        <div><img src="" alt="producto2" /></div>
-        <div><img src="" alt="producto3" /></div>
-        <div><img src="" alt="producto4" /></div>
-        <div><img src="" alt="producto5" /></div>
-        <div><img src="" alt="producto6" /></div>
+        
+        <div class="row justify-content-around mb-5">
+          <!-- CARD 1 -->
+          <div class="col-2">
+            <div class="card border border-primary text-bg-dark text-light">
+              <div class="card-body d-flex flex-column justify-content-evenly">
+                <img src="../assets/images/filamentoPLA.webp" alt="">
+                <h1 class="card-title">Filamento PLA 1Kg 320mts</h1>
+                <a href="pages/Impresoras3D.html" class="btn btn-primary text-bg-transparent">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <!-- FIN CARD 1 -->
+
+          <!-- CARD 2 -->
+          <div class="col-2">
+            <div class="card border border-primary text-bg-dark text-light ">
+              <div class="card-body d-flex flex-column justify-content-evenly">
+                <img src="../assets/images/nozzlemk8endurecido.jpg" alt="nada aun">
+                <h1 class="card-title">Nozzle Mk8 endurecido</h1>
+                <a href="pages/Impresoras3D.html" class="btn btn-primary text-bg-transparent">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <!-- FIN CARD 2 -->
+
+        
+            <!-- CARD 3 -->
+          <div class="col-2">
+            <div class="card border border-primary text-bg-dark text-light ">
+              <div class="card-body d-flex flex-column justify-content-evenly">
+                <img src="" alt="nada aun">
+                <h1 class="card-title">Nozzle Mk8 original</h1>
+                <a href="pages/Impresoras3D.html" class="btn btn-primary text-bg-transparent">Comprar</a>
+              </div>
+            </div>
+          </div>
+            <!-- FIN CARD 3 -->
+        
+          <!-- CARD 4 -->
+          <div class="col-2">
+            <div class="card border border-primary text-bg-dark text-light ">
+              <div class="card-body d-flex flex-column justify-content-evenly">
+                <img src="" alt="nada aun">
+                <h1 class="card-title">Nozzle Mk8 original</h1>
+                <a href="pages/Impresoras3D.html" class="btn btn-primary text-bg-transparent">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <!-- FIN CARD 4 -->
+        </div>
+
+        <div class="row justify-content-around mb-5">
+          <!-- CARD 1 -->
+          <div class="col-2">
+            <div class="card border border-primary text-bg-dark text-light ">
+              <div class="card-body d-flex flex-column justify-content-evenly">
+                <img src="" alt="nada aun">
+                <h1 class="card-title">Nozzle Mk8 original</h1>
+                <a href="pages/Impresoras3D.html" class="btn btn-primary text-bg-transparent">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <!-- FIN CARD 1 -->
+
+          <!-- CARD 2 -->
+          <div class="col-2">
+            <div class="card border border-primary text-bg-dark text-light ">
+              <div class="card-body d-flex flex-column justify-content-evenly">
+                <img src="" alt="nada aun">
+                <h1 class="card-title">Nozzle Mk8 original</h1>
+                <a href="pages/Impresoras3D.html" class="btn btn-primary text-bg-transparent">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <!-- FIN CARD 2 -->
+
+        
+            <!-- CARD 3 -->
+          <div class="col-2">
+            <div class="card border border-primary text-bg-dark text-light ">
+              <div class="card-body d-flex flex-column justify-content-evenly">
+                <img src="" alt="nada aun">
+                <h1 class="card-title">Nozzle Mk8 original</h1>
+                <a href="pages/Impresoras3D.html" class="btn btn-primary text-bg-transparent">Comprar</a>
+              </div>
+            </div>
+          </div>
+            <!-- FIN CARD 3 -->
+        
+          <!-- CARD 4 -->
+          <div class="col-2">
+            <div class="card border border-primary text-bg-dark text-light ">
+              <div class="card-body d-flex flex-column justify-content-evenly">
+                <img src="" alt="nada aun">
+                <h1 class="card-title">Nozzle Mk8 original</h1>
+                <a href="pages/Impresoras3D.html" class="btn btn-primary text-bg-transparent">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <!-- FIN CARD 4 -->
+        </div>
       </section>
     </main>
 
     <footer class="text-bg-primary row align-items-center h-100 p-2">
       <div class="col-md-2 col-12-sm p-4">
         <div class="d-flex h-100 align-items-center justify-content-center">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="../index.html">
             <img src="../assets/images/logo.png" alt="Logo" class="d-inline-block align-text-center">
             <h4 class="d-inline-block align-text-top">Empresa3D</h4>
           </a>

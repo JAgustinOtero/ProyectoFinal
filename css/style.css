@@ -44,12 +44,24 @@ footer {
   height: fit-content;
   background-image: none !important; }
 
+.insumos_header__titulo h1 {
+  font-size: 6rem !important; }
+
+.insumos_header__titulo p {
+  font-size: 2rem; }
+
 .card {
   border-radius: 15px !important;
   box-shadow: 1px 1px 10px 1px black !important; }
   .card img {
     border-radius: 15px;
     height: 30rem; }
+
+.mainInsumos .card img {
+  height: 30vh; }
+
+.mainInsumos .card h1 {
+  font-size: 1rem; }
 
 #carouselMainIndex .carousel-indicators {
   border: solid #000 0px !important;
@@ -78,3 +90,9 @@ footer {
 
 .text-bg-transparent {
   background-color: transparent !important; }
+
+.text-bg-primary {
+  background-color: RGBA(13, 110, 253, var(--bs-bg-opacity, 1)) !important !important; }
+
+.text-bg-secondary {
+  background-color: gray !important; }

@@ -26,7 +26,7 @@
     <header class="contacto_header">
       <nav class="navbar navbar-expand-md text-bg-dark">
         <div class="container-fluid">
-          <a id="logo" class="navbar-brand" href="../index.html">
+          <a id="logo" class="menu__logo navbar-brand" href="../index.html">
             <img src="../assets/images/logo.png" alt="Logo" class="d-inline-block align-text-center">
             <h4 class="d-inline-block align-text-top text-light">Empresa3D</h4>
           </a>
@@ -44,16 +44,19 @@
             </div>
             <div class="offcanvas-body text-bg-secondary">
               <ul class="navbar-nav justify-content-around flex-grow-1 pe-3 fs-5 m-4">
-                <li class="nav-item dropdown">
-                  <a class="nav-link link-light dropdown-toggle" href="../pages/Impresoras3D.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Impresoras 3D
-                  </a>
+                <!-- DROPDOWN SPLIT-->
+                <li class="btn-group">
+                  <a type="button" class="btn text-light text-bg-transparent border-0 fs-5" href="./Impresoras3D.html" >Impresoras3D</a>
+                  <button class="btn btn-danger dropdown-toggle dropdown-toggle-split text-bg-transparent border-0 fs-5" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="visually-hidden">Toggle Dropdown</span>
+                  </button>
+                <!-- FIN DROPDOWN -->
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item text-dark" href="../pages/Impresoras3D.html">Ender 3</a></li>
+                    <li><a class="dropdown-item text-dark" href="../pages/modelos/ender3.html">Ender 3</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item text-dark" href="../pages/Impresoras3D.html">Ender 3 V2</a></li>
+                    <li><a class="dropdown-item text-dark" href="../pages/modelos/ender3V2.html">Ender 3 V2</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item text-dark" href="../pages/Impresoras3D.html">Ender 3 S1</a></li>
+                    <li><a class="dropdown-item text-dark" href="../pages/modelos/ender3S1.html">Ender 3 S1</a></li>
                   </ul>
                 </li>
                 <li class="nav-item">
@@ -162,7 +165,7 @@
     <footer class="text-bg-primary row align-items-center h-100 p-2">
       <div class="col-md-2 col-12-sm p-4">
         <div class="d-flex h-100 align-items-center justify-content-center">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="../index.html">
             <img src="../assets/images/logo.png" alt="Logo" class="d-inline-block align-text-center">
             <h4 class="d-inline-block align-text-top">Empresa3D</h4>
           </a>

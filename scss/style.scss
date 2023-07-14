@@ -9,6 +9,7 @@
 @import "views/contacto";
 @import "views/home";
 @import "views/productos";
+@import "views/insumos";
 
 @import "components/card";
 @import "components/carousel";
@@ -16,5 +17,13 @@
 
   .text-bg-transparent{
     background-color: transparent !important;
+  }
+
+  .text-bg-primary{
+    background-color: $bg-color-primary !important;
+  }
+
+  .text-bg-secondary{
+    background-color: $bg-color-secondary !important;
   }
   
