@@ -3,21 +3,56 @@
   padding: 0;
   box-sizing: border-box; }
 
+body {
+  background: linear-gradient(360deg, rgba(11, 9, 75, 0.557861) 0%, rgba(140, 154, 167, 0.560662) 49%, #0b094b 100%); }
+
 header {
-  height: 120VH;
-  background-position: center TOP;
-  background-image: url(../assets/images/portada.gif);
-  background-repeat: no-repeat;
-  background-size: auto 120vh; }
+  height: 120vh; }
   header nav .menu__logo {
     display: none; }
   header nav ul {
     text-shadow: 1px; }
-    header nav ul li ul {
-      text-shadow: 0px 0px 0px #000; }
-  header .header__card {
-    width: 375px;
-    height: 250px; }
+    header nav ul li {
+      margin-left: 15px;
+      margin-right: 15px; }
+      header nav ul li ul {
+        text-shadow: 0px 0px 0px #000; }
+  header nav .redes {
+    position: relative;
+    right: 10px; }
+  header .header__cards {
+    margin-bottom: 5rem; }
+    header .header__cards__item {
+      width: 375px;
+      height: 250px;
+      background-color: rgba(11, 9, 75, 0.4);
+      border-radius: 1rem; }
+      header .header__cards__item h1 {
+        font-size: 1.75rem; }
+      header .header__cards__item p {
+        font-size: 0.9rem; }
+      header .header__cards__item a:hover {
+        background-color: #3496cd !important;
+        color: black; }
+  header .titulo h1 {
+    font-size: 6rem; }
+  header .titulo p {
+    font-size: 2rem; }
+  header .srolldown p {
+    margin-bottom: 0; }
+  header .srolldown img {
+    animation: scrollDown 2s infinite; }
+
+.header-gif {
+  background-position: center TOP;
+  background-image: url(../assets/images/portada.gif);
+  background-repeat: no-repeat;
+  background-size: auto 120vh; }
+
+.logo img {
+  height: 50px;
+  width: 50px;
+  color: white; }
 
 @media (min-width: 767.98px) {
   header nav .menu__logo {
@@ -25,13 +60,35 @@ header {
   header {
     text-shadow: 1px 1px 2px #000; }
   .offcanvas .offcanvas-body {
-    flex-direction: row;
     background-color: transparent !important; }
   .offcanvas .offcanvas-body .navbar-nav {
-    align-items: center; } }
+    align-items: center; }
+  header .header__cards__item {
+    width: 500px;
+    height: 300px; }
+    header .header__cards__item h1 {
+      font-size: 2.7rem; }
+    header .header__cards__item p {
+      font-size: 1rem; } }
+
+@keyframes scrollDown {
+  0% {
+    transform: translateY(10px); }
+  50% {
+    transform: translateY(-10px); }
+  100% {
+    transform: translateY(10px); } }
 
 footer {
   height: 20vh; }
+  footer .logo {
+    transform: scale(1.3); }
+  footer h1 {
+    margin-bottom: 1rem; }
+  footer ul {
+    list-style: none; }
+    footer ul li p {
+      margin-bottom: 0.4rem; }
 
 @media (min-width: 767.98px) {
   #newsletter {
@@ -44,18 +101,57 @@ footer {
   height: fit-content;
   background-image: none !important; }
 
+main p {
+  font-size: 0.95rem !important; }
+
 .insumos_header__titulo h1 {
   font-size: 6rem !important; }
 
 .insumos_header__titulo p {
   font-size: 2rem; }
 
+.insumos_header__titulo a {
+  color: white;
+  background-color: #0b094b; }
+  .insumos_header__titulo a:hover {
+    background-color: #3496cd;
+    color: black; }
+
+.mainInsumos div img {
+  height: 60vh; }
+
+.mainInsumos__cotizacion {
+  height: 30vh; }
+  .mainInsumos__cotizacion div {
+    background-color: rgba(11, 9, 75, 0.4); }
+    .mainInsumos__cotizacion div h1 {
+      font-weight: 900; }
+    .mainInsumos__cotizacion div a {
+      background-color: #0b094b;
+      height: 60%;
+      color: white; }
+      .mainInsumos__cotizacion div a:hover {
+        background-color: #3496cd; }
+
 .card {
   border-radius: 15px !important;
   box-shadow: 1px 1px 10px 1px black !important; }
-  .card img {
+  .card a {
     border-radius: 15px;
-    height: 30rem; }
+    color: white;
+    background-color: #0b094b; }
+    .card a:hover {
+      background-color: #3496cd;
+      color: black; }
+
+.card_servicio img {
+  border-radius: 15px; }
+
+.card_impresora img {
+  border-radius: 15px; }
+  .card_impresora img:hover {
+    transition: 2s;
+    transform: scale(1.2); }
 
 .mainInsumos .card img {
   height: 30vh; }
@@ -88,11 +184,17 @@ footer {
 #carouselMainIndex .carousel-inner img {
   margin: auto; }
 
+.dropdown-menu .dropdown-item {
+  transition: transform 2s ease-out; }
+  .dropdown-menu .dropdown-item:hover {
+    background-color: transparent;
+    transform: translate(30px); }
+
 .text-bg-transparent {
   background-color: transparent !important; }
 
 .text-bg-primary {
-  background-color: RGBA(13, 110, 253, var(--bs-bg-opacity, 1)) !important; }
+  background-color: #0b094b !important; }
 
 .text-bg-secondary {
-  background-color: gray !important; }
+  background-color: #3496cd !important; }

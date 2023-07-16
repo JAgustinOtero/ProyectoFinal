@@ -1,12 +1,33 @@
 .card{
     border-radius: 15px !important;
     box-shadow: 1px 1px 10px 1px rgb(0, 0, 0) !important;
-    img{
-        border-radius: 15px;
-        height: 30rem;
+    
+    
+        a{
+            border-radius: 15px;
+            color: white;
+            background-color: $bg-color-primary;
+            &:hover{
+                background-color: $bg-color-secondary;
+                color: black;
+            }
         }
 }
 
+.card_servicio{
+    img{
+        border-radius: 15px;
+    }
+}
+.card_impresora{
+    img{
+        border-radius: 15px;
+        &:hover{
+            transition: 2s;
+            transform: scale(1.2);
+        }
+    }
+}
 .mainInsumos{
     .card{
         img{

@@ -1,2 +1,6 @@
-$bg-color-primary: RGBA(13,110,253,var(--bs-bg-opacity,1));
-$bg-color-secondary: gray;
+$bg-color-primary: rgba(11,9,75,1);
+$bg-color-primary-40: rgba(11,9,75,0.4);
+
+$bg-color-secondary: rgba(52,150,205,1);
+$bg-color-secondary-50: rgba(52,150,205,0.5);
+$bg-color-primary-to-secondary: linear-gradient(360deg, rgba(11,9,75,0.5578606442577031) 0%, rgba(140,154,167,0.5606617647058824) 49%, rgba(11,9,75,1) 100%);
