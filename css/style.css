@@ -4,7 +4,7 @@
   box-sizing: border-box; }
 
 body {
-  background: linear-gradient(360deg, rgba(11, 9, 75, 0.557861) 0%, rgba(140, 154, 167, 0.560662) 49%, #0b094b 100%); }
+  background: linear-gradient(180deg, #212529 0%, #495057 50%, #dee2e6 100%); }
 
 header {
   height: 120vh; }
@@ -152,22 +152,28 @@ main p {
 .card {
   border-radius: 15px !important;
   box-shadow: 1px 1px 10px 1px black !important; }
-  .card a {
-    border-radius: 15px;
-    color: white;
-    background-color: #0b094b; }
-    .card a:hover {
-      background-color: #3496cd;
+  .card__link {
+    border-radius: 15px !important; }
+    .card__link img {
+      border-radius: 15px;
+      width: 100%; }
+    .card__link__text {
+      display: none;
+      position: absolute;
+      top: 20px;
+      left: 10px; }
+    .card__link:hover {
       color: black; }
+      .card__link:hover img {
+        filter: blur(4px); }
+      .card__link:hover .card__link__text {
+        display: block; }
 
 .card_servicio img {
-  border-radius: 15px; }
-
-.card_impresora img {
-  border-radius: 15px; }
-  .card_impresora img:hover {
+  transform: scale(0.5); }
+  .card_servicio img:hover {
     transition: 2s;
-    transform: scale(1.2); }
+    transform: scale(0.75); }
 
 .mainInsumos .card img {
   height: 30vh; }
