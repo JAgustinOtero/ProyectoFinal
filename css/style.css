@@ -133,6 +133,22 @@ main p {
       .mainInsumos__cotizacion div a:hover {
         background-color: #3496cd; }
 
+.modelos_header__titulo h1 {
+  font-size: 6rem !important; }
+
+.modelos_header__titulo p {
+  font-size: 2rem; }
+
+.modelos_header__titulo a {
+  color: white;
+  background-color: #0b094b; }
+  .modelos_header__titulo a:hover {
+    background-color: #3496cd;
+    color: black; }
+
+.main_ender3 section {
+  height: 60vh; }
+
 .card {
   border-radius: 15px !important;
   box-shadow: 1px 1px 10px 1px black !important; }

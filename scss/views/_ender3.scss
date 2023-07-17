@@ -1,0 +1,25 @@
+.modelos_header{
+    
+    &__titulo{
+        h1{
+            font-size: 6rem !important;
+        }
+        p{
+            font-size: 2rem;
+        }
+        a{
+            color: white;
+            background-color: $bg-color-primary;
+            &:hover{
+                background-color: $bg-color-secondary;
+                color: black;
+            }
+        }
+    }
+}
+
+.main_ender3{
+    section{
+        height: 60vh;
+    }
+}
