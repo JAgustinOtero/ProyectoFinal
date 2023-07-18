@@ -1,28 +1,56 @@
 .card{
     border-radius: 15px !important;
     box-shadow: 1px 1px 10px 1px rgb(0, 0, 0) !important;
+    background-color: $bg-color-primary-40;
     
     
     &__link{
+        text-decoration: none;
         border-radius: 15px !important;
         img{
             border-radius: 15px;
             width: 100%;
         }
+        h2{
+            color: white;
+            font-weight: 700;
+        }
         &__text{
             display: none;
             position: absolute;
-            top: 20px;
-            left: 10px;
+            top: 70px;
+            left: 0;
+            padding: 0;
+            ul{
+                width: 75%;
+                padding-left: 0;
+                list-style: none;
+                li{
+                    text-shadow: 1px 1px 1px #000;
+                    h3{
+                        font-size: 1.5rem;
+                        font-weight: 400;
+                    }
+                    p{
+                        font-size: 0.8rem;
+                        font-weight: 300;
+                    }
+                    hr{
+                        height: 3px;
+                        background-color: black;
+                    }
+                }
+            }
         }
         &:hover{
             img{
-                filter: blur(4px);
+                animation: blurProgressive 0.5s 1 forwards;
             }
-            
-            color: black;
+            color: white;
             .card__link__text{
-                display: block;
+                display: flex;
+                justify-content: center;
+                
             }
         }
         }
@@ -47,4 +75,18 @@
             font-size: 1rem;
         }
     }
+}
+
+
+@keyframes blurProgressive
+{
+
+  0% {
+    filter: blur(0);
+  }
+
+  100% {
+    filter: blur(4px);
+  }
+
 }

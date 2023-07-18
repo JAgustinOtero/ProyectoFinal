@@ -3,4 +3,70 @@ main{
     p{
         font-size: 0.95rem !important;
     }
+    
+    .main_titulo{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        
+        h1{
+            color: white;
+            font-size: 4rem;
+            font-weight: 800;
+            z-index: 2;
+            margin-bottom: 0.5rem;
+        }
+        hr{
+            margin: 0;
+            left: 10%;
+            background-color: white;
+            height: 5px;
+            width: 50%;
+        }            
+    }
+
+    #products
+    {
+        .main_titulo{
+            align-items: start;
+            margin-left: 20%;
+        }
+    }
+    #services
+    {
+        .main_titulo{
+            align-items: end;
+            margin-right: 20%;
+       }
+    }
 }
+
+@media (max-width: 992px){
+    main{
+        h1{
+            font-size: 3rem;
+            font-weight: 800;
+        }
+        .shadow_text
+        {
+        }
+    }
+}
+
+
+
+// .shadow_text
+            // {
+            //     background: linear-gradient(90deg, rgba(0,0,0,0.15) 0%, rgba(127,127,127,0.8) 49%, rgba(0,0,0,0.15) 100%);
+            //     font-weight: 800;
+            //     position:absolute;
+            //     top: 0;
+            //     color: rgba(255,255,255,0.3);
+            //     font-size: 4rem;
+            //     z-index: -2;
+            //     transform: scale(1.7);
+            //     background-clip: text;
+            //     -webkit-background-clip: text;
+            //     color: transparent;
+            // }

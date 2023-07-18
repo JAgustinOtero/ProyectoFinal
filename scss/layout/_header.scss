@@ -29,9 +29,9 @@ header{
 
     .header__cards
     {
-      margin-bottom: 5rem;
-        &__item
-        {
+      &__item
+      {
+          margin-bottom: 2rem;
           width: 375px;
           height: 250px;
           background-color: $bg-color-primary-40;
@@ -91,7 +91,7 @@ header{
 }
 
 
-@media (min-width: 767.98px){
+@media (min-width: 992px){
   
     header nav .menu__logo{
       display: block;

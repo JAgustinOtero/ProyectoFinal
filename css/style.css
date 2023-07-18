@@ -20,20 +20,19 @@ header {
   header nav .redes {
     position: relative;
     right: 10px; }
-  header .header__cards {
-    margin-bottom: 5rem; }
-    header .header__cards__item {
-      width: 375px;
-      height: 250px;
-      background-color: rgba(11, 9, 75, 0.4);
-      border-radius: 1rem; }
-      header .header__cards__item h1 {
-        font-size: 1.75rem; }
-      header .header__cards__item p {
-        font-size: 0.9rem; }
-      header .header__cards__item a:hover {
-        background-color: #3496cd !important;
-        color: black; }
+  header .header__cards__item {
+    margin-bottom: 2rem;
+    width: 375px;
+    height: 250px;
+    background-color: rgba(11, 9, 75, 0.4);
+    border-radius: 1rem; }
+    header .header__cards__item h1 {
+      font-size: 1.75rem; }
+    header .header__cards__item p {
+      font-size: 0.9rem; }
+    header .header__cards__item a:hover {
+      background-color: #3496cd !important;
+      color: black; }
   header .titulo h1 {
     font-size: 6rem; }
   header .titulo p {
@@ -54,7 +53,7 @@ header {
   width: 50px;
   color: white; }
 
-@media (min-width: 767.98px) {
+@media (min-width: 992px) {
   header nav .menu__logo {
     display: block; }
   header {
@@ -90,7 +89,7 @@ footer {
     footer ul li p {
       margin-bottom: 0.4rem; }
 
-@media (min-width: 767.98px) {
+@media (min-width: 992px) {
   #newsletter {
     width: 100% !important; } }
 
@@ -103,6 +102,37 @@ footer {
 
 main p {
   font-size: 0.95rem !important; }
+
+main .main_titulo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start; }
+  main .main_titulo h1 {
+    color: white;
+    font-size: 4rem;
+    font-weight: 800;
+    z-index: 2;
+    margin-bottom: 0.5rem; }
+  main .main_titulo hr {
+    margin: 0;
+    left: 10%;
+    background-color: white;
+    height: 5px;
+    width: 50%; }
+
+main #products .main_titulo {
+  align-items: start;
+  margin-left: 20%; }
+
+main #services .main_titulo {
+  align-items: end;
+  margin-right: 20%; }
+
+@media (max-width: 992px) {
+  main h1 {
+    font-size: 3rem;
+    font-weight: 800; } }
 
 .insumos_header__titulo h1 {
   font-size: 6rem !important; }
@@ -151,23 +181,45 @@ main p {
 
 .card {
   border-radius: 15px !important;
-  box-shadow: 1px 1px 10px 1px black !important; }
+  box-shadow: 1px 1px 10px 1px black !important;
+  background-color: rgba(11, 9, 75, 0.4); }
   .card__link {
+    text-decoration: none;
     border-radius: 15px !important; }
     .card__link img {
       border-radius: 15px;
       width: 100%; }
+    .card__link h2 {
+      color: white;
+      font-weight: 700; }
     .card__link__text {
       display: none;
       position: absolute;
-      top: 20px;
-      left: 10px; }
+      top: 70px;
+      left: 0;
+      padding: 0; }
+      .card__link__text ul {
+        width: 75%;
+        padding-left: 0;
+        list-style: none; }
+        .card__link__text ul li {
+          text-shadow: 1px 1px 1px #000; }
+          .card__link__text ul li h3 {
+            font-size: 1.5rem;
+            font-weight: 400; }
+          .card__link__text ul li p {
+            font-size: 0.8rem;
+            font-weight: 300; }
+          .card__link__text ul li hr {
+            height: 3px;
+            background-color: black; }
     .card__link:hover {
-      color: black; }
+      color: white; }
       .card__link:hover img {
-        filter: blur(4px); }
+        animation: blurProgressive 0.5s 1 forwards; }
       .card__link:hover .card__link__text {
-        display: block; }
+        display: flex;
+        justify-content: center; }
 
 .card_servicio img {
   transform: scale(0.5); }
@@ -180,6 +232,12 @@ main p {
 
 .mainInsumos .card h1 {
   font-size: 1rem; }
+
+@keyframes blurProgressive {
+  0% {
+    filter: blur(0); }
+  100% {
+    filter: blur(4px); } }
 
 #carouselMainIndex .carousel-indicators {
   border: solid #000 0px !important;
