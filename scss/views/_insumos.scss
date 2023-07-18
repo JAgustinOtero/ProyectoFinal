@@ -20,9 +20,26 @@
 
 
 .mainInsumos{
-    div{
+    .producto{
+        color: white;
         img{
-            height: 60vh;
+            width: 35%;
+            #filamento{
+                width: 30%;
+            }
+        }
+        div{
+            padding: 2%;
+            h1{
+                font-size: 5rem;
+                font-weight: 700;
+            }
+            p{
+                font-size: 1.25rem !important;
+                font-weight: 400;
+                text-shadow: 1px 1px 1px $bg-color-secondary;
+                width: 79%;
+            }
         }
     }
     &__cotizacion{
@@ -31,6 +48,7 @@
         {
             background-color: $bg-color-primary-40;
             h1{
+                font-size: 3rem;
                 font-weight: 900;
             }
             a{

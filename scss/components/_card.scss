@@ -1,7 +1,7 @@
 .card{
     border-radius: 15px !important;
     box-shadow: 1px 1px 10px 1px rgb(0, 0, 0) !important;
-    background-color: $bg-color-primary-40;
+    background-color: $bg-color-tertiary;
     
     
     &__link{
@@ -18,7 +18,7 @@
         &__text{
             display: none;
             position: absolute;
-            top: 70px;
+            top: 60px;
             left: 0;
             padding: 0;
             ul{
@@ -57,6 +57,7 @@
 }
 
 .card_servicio{
+    color: white;
     img{
         transform: scale(0.5);
         &:hover{
@@ -64,6 +65,17 @@
             transform: scale(0.75);
         }
     }
+    
+    h2{
+        color: white;
+        font-weight: 700;
+    }
+    p{
+        font-size: 0.8rem;
+        font-weight: 300;
+    }
+    
+    
 }
 
 .mainInsumos{

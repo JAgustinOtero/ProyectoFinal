@@ -5,6 +5,6 @@
 }
 
 body{
-    background: linear-gradient(180deg, rgba(33,37,41,1) 0%, rgba(73,80,87,1) 50%, rgba(222,226,230,1) 100%);
+    background: linear-gradient(180deg, $bg-color-primary, $bg-color-cautro 50%, rgba(222,226,230,1) 100%);
     // background: linear-gradient(180deg, rgba(33,37,41,1) 0%, rgba(173,181,189,1) 91%, rgba(233,236,239,1) 100%);
 }
