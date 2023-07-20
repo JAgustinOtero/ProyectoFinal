@@ -23,74 +23,91 @@
   <body id="contacto-body">
 
         <!-- OBJETO NAV CON DOBLE BOTON -->
-    <header class="contacto_header">
-      <nav class="navbar navbar-expand-md">
-        <div class="container-fluid">
-          <a id="logo" class="menu__logo navbar-brand" href="../index.html">
-            <img src="../assets/images/logo.png" alt="Logo" class="d-inline-block align-text-center">
-            <h4 class="d-inline-block align-text-top text-light">Empresa3D</h4>
-          </a>
-          <button class="navbar-toggler border-light p-3 rounded-3" style="--bs-border-opacity: .5;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <img src="../assets/images/logo.png" alt="Logo" class="d-inline-block align-text-center">
-            <h4 class="d-inline-block align-text-top text-light">Empresa3D</h4>
-          </button>
-          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header text-bg-dark">
-              <a class="navbar-brand" href="../index.html">
+        <header class="container-fluid pt-4 contacto_header text-light text-bg-primary">
+          <!-- NAVBAR CANVAS-->
+          <nav class="navbar navbar-expand-md">
+            <!-- BOTON DE TOOGLE -->
+            <div class="menu container-fluid d-flex align-items-top">
+              <a class="navbar-brand menu__logo logo " href="../index.html">
+                <div class="d-flex align-items-center">
+                  <img src="../assets/images/logo.svg" alt="Logo" class="">
+                  <h1 class="d-inline-block text-light">Empresa3D</h1>
+                </div>
+              </a>
+              <button class="navbar-toggler border-light p-3 rounded-3" style="--bs-border-opacity: .5;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <img src="../assets/images/logo.png" alt="Logo" class="d-inline-block align-text-center">
                 <h4 class="d-inline-block align-text-top text-light">Empresa3D</h4>
-              </a>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body text-bg-secondary">
-              <ul class="navbar-nav justify-content-around flex-grow-1 pe-3 fs-5 m-4">
-                <!-- DROPDOWN SPLIT-->
-                <li class="nav-item dropdown">
-                  <a class="nav-link link-light dropdown-toggle" href="Impresoras3D.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Impresoras 3D
+              </button>
+              <!-- MENU DE CANVAS  -->
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <!-- LOGO Y BOTON PARA CERRAR -->
+                <div class="offcanvas-header text-bg-dark">
+                  <a class="navbar-brand" href="./index.html">
+                    <img src="../assets/images/logo.png" alt="Logo" class="d-inline-block align-text-center">
+                    <h4 class="d-inline-block align-text-top text-light">Empresa3D</h4>
                   </a>
-                <!-- FIN DROPDOWN -->
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item text-dark" href="../pages/modelos/ender3.html">Ender 3</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item text-dark" href="../pages/modelos/ender3V2.html">Ender 3 V2</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item text-dark" href="../pages/modelos/ender3S1.html">Ender 3 S1</a></li>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <!-- MENU DE OPCIONES -->
+                <div class="offcanvas-body text-bg-secondary">
+                  <ul class="navbar-nav flex-grow-1 justify-content-between fs-5 m-4">
+                    <!-- ITEM 1 -->
+                    <!-- DROPDOWN SPLIT-->
+                    <div class="offcanvas-body">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link link-light dropdown-toggle" href="./Impresoras3D.html"  data-bs-toggle="dropdown" aria-expanded="false">
+                        Impresoras 3D
+                      </a>
+                    <!-- FIN DROPDOWN -->
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item text-dark" href="./modelos/ender3.html">Ender 3</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item text-dark" href="./modelos/ender3V2.html">Ender 3 V2</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item text-dark" href="./modelos/ender3S1.html">Ender 3 S1</a></li>
+                      </ul>
+                    </li>
+                    <!-- ITEM 2 -->
+                    <li class="nav-item">
+                      <a class="nav-link link-light" href="./ServicioDeImpresion.html">Servicio De Impresion</a>
+                    </li>
+                    <!-- ITEM 3 -->
+                    <li class="nav-item">
+                      <a class="nav-link link-light" href="./Insumos.html">Insumos</a>
+                    </li>
+                    <!-- ITEM 4  -->
+                    <li class="nav-item">
+                      <a class="nav-link link-light" href="./Contacto.html">Contacto</a>
+                    </li>
+    
+                    </div>
+                    <!-- ITEM 5 REDES -->
+                    <li class="w-10"></li>
+                    <li>
+                      <div class="nav-item redes"
+                      >
+                        <a href="https://www.instagram.com/"
+                          ><img
+                            src="../assets/images/logotipo-de-instagram.png"
+                            alt="imagen de instagram"
+                            height="40px"
+                            class="m-2"
+                        /></a>
+                        <a href="https://www.linkedin.com/feed/"
+                          ><img
+                            src="../assets/images/LinkedIn.png"
+                            alt="imagen de LinkedIn"
+                            height="40px"
+                        /></a>
+                      </div>
+                    </li>
                   </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link link-light" href="../pages/ServicioDeImpresion.html">Servicio De Impresion</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link link-light" href="../pages/Insumos.html">Insumos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link link-light" href="../pages/Contacto.html">Contacto</a>
-                </li>
-                <li>
-                  <div id="redes"
-                  >
-                    <a href=""
-                      ><img
-                        src="../assets/images/logotipo-de-instagram.png"
-                        alt="imagen de instagram"
-                        height="40px"
-                        class="m-3"
-                    /></a>
-                    <a href="#"
-                      ><img
-                        src="../assets/images/LinkedIn.png"
-                        alt="imagen de LinkedIn"
-                        height="40px"
-                    /></a>
-                  </div>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </nav>
-    </header>
+          </nav>
+          <!-- FIN NAVBAR CANVAS -->
+        </header>
 
     <main class="text-bg-secondary">
       <section class="row pt-5 p-4">

@@ -20,18 +20,24 @@
     <title>Ender3 S1</title>
   </head>
   <body>
-    <header>
+    <header class="container-fluid pt-4 ender3_header text-light">
+      <!-- NAVBAR CANVAS-->
       <nav class="navbar navbar-expand-md">
-        <div class="container-fluid">
-          <a id="logo" class="menu__logo navbar-brand" href="../../index.html">
-            <img src="../../assets/images/logo.png" alt="Logo" class="d-inline-block align-text-center">
-            <h4 class="d-inline-block align-text-top text-light">Empresa3D</h4>
+        <!-- BOTON DE TOOGLE -->
+        <div class="menu container-fluid d-flex align-items-top">
+          <a class="navbar-brand menu__logo logo " href="../../index.html">
+            <div class="d-flex align-items-center">
+              <img src="../../assets/images/logo.svg" alt="Logo" class="">
+              <h1 class="d-inline-block text-light">Empresa3D</h1>
+            </div>
           </a>
           <button class="navbar-toggler border-light p-3 rounded-3" style="--bs-border-opacity: .5;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <img src="../../assets/images/logo.png" alt="Logo" class="d-inline-block align-text-center">
             <h4 class="d-inline-block align-text-top text-light">Empresa3D</h4>
           </button>
+          <!-- MENU DE CANVAS  -->
           <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <!-- LOGO Y BOTON PARA CERRAR -->
             <div class="offcanvas-header text-bg-dark">
               <a class="navbar-brand" href="../../index.html">
                 <img src="../../assets/images/logo.png" alt="Logo" class="d-inline-block align-text-center">
@@ -39,41 +45,50 @@
               </a>
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
+            <!-- MENU DE OPCIONES -->
             <div class="offcanvas-body text-bg-secondary">
-              <ul class="navbar-nav justify-content-around flex-grow-1 pe-3 fs-5 m-4">
+              <ul class="navbar-nav flex-grow-1 justify-content-between fs-5 m-4">
+                <!-- ITEM 1 -->
                 <!-- DROPDOWN SPLIT-->
-                <li class="btn-group">
-                  <a type="button" class="btn text-light text-bg-transparent border-0 fs-5" href="../../pages/Impresoras3D.html" >Impresoras3D</a>
-                  <button class="btn btn-danger dropdown-toggle dropdown-toggle-split text-bg-transparent border-0 fs-5" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <span class="visually-hidden">Toggle Dropdown</span>
-                  </button>
+                <div class="offcanvas-body">
+                <li class="nav-item dropdown">
+                  <a class="nav-link link-light dropdown-toggle" href="../Impresoras3D.html"  data-bs-toggle="dropdown" aria-expanded="false">
+                    Impresoras 3D
+                  </a>
                 <!-- FIN DROPDOWN -->
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item text-dark" href="../../pages/modelos/ender3.html">Ender 3</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item text-dark" href="../../pages/modelos/ender3V2.html">Ender 3 V2</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item text-dark" href="../../pages/modelos/ender3S1.html">Ender 3 S1</a></li>
-                </ul>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item text-dark" href="./ender3.html">Ender 3</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item text-dark" href="./ender3V2.html">Ender 3 V2</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item text-dark" href="./ender3S1.html">Ender 3 S1</a></li>
+                  </ul>
                 </li>
+                <!-- ITEM 2 -->
                 <li class="nav-item">
-                  <a class="nav-link link-light" href="../../pages/ServicioDeImpresion.html">Servicio De Impresion</a>
+                  <a class="nav-link link-light" href=".././ServicioDeImpresion.html">Servicio De Impresion</a>
                 </li>
+                <!-- ITEM 3 -->
                 <li class="nav-item">
-                  <a class="nav-link link-light" href="../../pages/Insumos.html">Insumos</a>
+                  <a class="nav-link link-light" href=".././Insumos.html">Insumos</a>
                 </li>
+                <!-- ITEM 4  -->
                 <li class="nav-item">
-                  <a class="nav-link link-light" href="../../pages/Contacto.html">Contacto</a>
+                  <a class="nav-link link-light" href=".././Contacto.html">Contacto</a>
                 </li>
+
+                </div>
+                <!-- ITEM 5 REDES -->
+                <li class="w-10"></li>
                 <li>
-                  <div id="redes"
+                  <div class="nav-item redes"
                   >
                     <a href=""
                       ><img
                         src="../../assets/images/logotipo-de-instagram.png"
                         alt="imagen de instagram"
                         height="40px"
-                        class="m-3"
+                        class="m-2"
                     /></a>
                     <a href="#"
                       ><img
@@ -88,6 +103,21 @@
           </div>
         </div>
       </nav>
+      <!-- FIN NAVBAR CANVAS -->
+
+      <div class="titulo h-50 w-100 ps-5 pt-5">
+        <div class="titulo__principal">
+          <h1>Ender-3 S1</h1>
+          <h2 class="title-Shadow">Ender-3 S1</h2>
+        </div>
+        <p>Descubri una nueva experiencia en impresion3D. </p>
+        <a href="Impresoras3D.html" class="btn">Pedi una Cotización</a>
+      </div>
+      
+      <div class="w-100 text-center srolldown mt-5 pt-5">
+        <p class="fs-3">Scroll down</p>
+        <img src="../../assets/images/arrow-down-svgrepo-com.svg" alt="" height="50px" width="200px"  class="">
+      </div>
     </header>
 
 

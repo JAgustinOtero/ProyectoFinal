@@ -49,10 +49,37 @@ main{
             font-size: 3rem;
             font-weight: 800;
         }
-        .shadow_text
-        {
+    }
+    
+}
+
+@media (max-width: 576px){
+   main{
+
+    .main_titulo{
+        align-items: start;
+        
+        h1{
+            font-size: 3rem;
+            font-weight: 700;
+        }           
+    }
+
+    #products
+    {
+        .main_titulo{
+            align-items: start;
+            margin: 0;
         }
     }
+    #services
+    {
+        .main_titulo{
+            margin: 0;
+       }
+    }
+   }
+    
 }
 
 

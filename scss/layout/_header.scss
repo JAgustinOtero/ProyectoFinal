@@ -27,8 +27,7 @@ header{
         }
     } 
 
-    .header__cards
-    {
+    .header__cards{
       &__item
       {
           margin-bottom: 2rem;
@@ -52,15 +51,36 @@ header{
     }
 
     .titulo{
-      h1{
-        font-size: 6rem;
-        // font-weight: bold;
+      &__principal{
+          position: relative;
+
+          h1{
+              font-size: 6rem !important;
+              font-weight: 700;
+          }
+          h2{
+              color: $bg-color-secondary;
+              opacity: 0.1;
+              font-size: 11rem;
+              font-weight: 700;
+              position: absolute;
+              left: 1rem;
+              top:-5rem;
+              z-index: -2;
+          }
       }
       p{
-        font-size: 2rem;
+          font-size: 2rem;
       }
-
-    }
+      a{
+          color: white;
+          background-color: $bg-color-primary;
+          &:hover{
+              background-color: $bg-color-secondary;
+              color: black;
+          }
+      }
+  }
     
 
       .srolldown{

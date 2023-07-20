@@ -19,9 +19,21 @@ footer{
     }
   }
 
+  @media (max-width: 1200px){
+    footer{
 
-@media (min-width: 992px){
-    #newsletter{
-      width: 100% !important;
+      .logo{
+        transform: scale(1);
+      }
+    }
+
+  }
+@media (max-width: 992px){
+  footer{
+
+    .logo{
+      transform: scale(1.3);
     }
   }
+
+}
