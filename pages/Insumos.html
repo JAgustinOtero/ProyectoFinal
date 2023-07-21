@@ -16,15 +16,19 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css" />
     <title>Insumos</title>
   </head>
-  <body class="h-100">
+  <body>
 
-    <header class="container-fluid pt-4 insumos_header text-light">
+    <header class="container-fluid pt-4 text-light">
       <!-- NAVBAR CANVAS-->
-      <nav class="navbar navbar-expand-md">
+      <nav class="navbar navbar-expand-lg">
         <!-- BOTON DE TOOGLE -->
         <div class="menu container-fluid d-flex align-items-top">
           <a class="navbar-brand menu__logo logo " href="../index.html">
@@ -48,7 +52,7 @@
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <!-- MENU DE OPCIONES -->
-            <div class="offcanvas-body text-bg-secondary">
+            <div class="offcanvas-body ">
               <ul class="navbar-nav flex-grow-1 justify-content-between fs-5 m-4">
                 <!-- ITEM 1 -->
                 <!-- DROPDOWN SPLIT-->
@@ -81,7 +85,7 @@
 
                 </div>
                 <!-- ITEM 5 REDES -->
-                <li class="w-10"></li>
+                
                 <li>
                   <div class="nav-item redes"
                   >
@@ -107,7 +111,7 @@
       </nav>
       <!-- FIN NAVBAR CANVAS -->
 
-      <div class="titulo h-50 w-100 ps-5 pt-5">
+      <div class="titulo h-50 w-100 ps-5 pt-5" data-aos="fade-left">
         <div class="titulo__principal">
           <h1>Insumos</h1>
           <h2 class="title-Shadow">Insumos</h2>
@@ -122,51 +126,49 @@
       </div>
     </header>
     <!-- MAIN -->
-    <main class="mainInsumos p-5">
+    <main class="mainInsumos">
 
-      <div class="d-flex justify-content-start producto" data-aos="fade-left">
-        <div class="d-flex align-items-center justify-content-between w-100" >
-          <img id="filamento" src="../assets/images/placaimpresora.webp" alt="nada aun">
-          <div>
+      <section class="row justify-content-center" >
+        <div class="producto d-flex col-9 align-items-center" data-aos="fade-left">
+          <img clas="producto__imagen" src="../assets/images/placaimpresora.webp" alt="nada aun">
+          <div class="producto__texto h-75">
             <h1 class="">Electronica</h1>
             <p> Puedes elegir entre diferentes tipos de filamento, como PLA, ABS, PETG, nylon, madera, metal, etc., según las características y el acabado que quieras obtener. Con un rollo de filamento para impresión 3D, podrás imprimir desde figuras decorativas hasta piezas funcionales, pasando por joyas, prototipos, herramientas y mucho más. </p>
           </div>
         </div>
-      </div>
-
-      <div class="d-flex justify-content-end producto" data-aos="fade-right">
-        <div class="d-flex align-items-center justify-content-between w-100">
-          <div class="d-flex flex-column align-items-end ">
-            <h1 class="text-end">Repuestos Mecanicos</h1>
-            <p class="text-end"> Puedes elegir entre diferentes tipos de filamento, como PLA, ABS, PETG, nylon, madera, metal, etc., según las características y el acabado que quieras obtener. Con un rollo de filamento para impresión 3D, podrás imprimir desde figuras decorativas hasta piezas funcionales, pasando por joyas, prototipos, herramientas y mucho más. </p>
-          </div>
-          <img src="../assets/images/piezas_e3d.webp" alt="nada aun">
-        </div>  
-      </div>
-
-      <div class="d-flex justify-content-start producto" data-aos="fade-left">
-        <div class="d-flex align-items-center justify-content-between w-100">
-          <img src="../assets/images/filamento.webp" alt="nada aun">
-          <div class="">
-            <h1 class="">Filamentos</h1>
+      </section>
+      <section class="row justify-content-center" >
+        <div class="producto d-flex col-9 align-items-center flex-row-reverse" data-aos="fade-left">
+          <img clas="producto__imagen" src="../assets/images/placaimpresora.webp" alt="nada aun">
+          <div class="producto__texto h-75">
+            <h1 class="">Electronica</h1>
             <p> Puedes elegir entre diferentes tipos de filamento, como PLA, ABS, PETG, nylon, madera, metal, etc., según las características y el acabado que quieras obtener. Con un rollo de filamento para impresión 3D, podrás imprimir desde figuras decorativas hasta piezas funcionales, pasando por joyas, prototipos, herramientas y mucho más. </p>
           </div>
         </div>
-      </div>
+      </section>
+      <section class="row justify-content-center mb-4" >
+        <div class="producto d-flex col-9 align-items-center " data-aos="fade-left">
+          <img clas="producto__imagen" src="../assets/images/placaimpresora.webp" alt="nada aun" class="">
+          <div class="producto__texto h-75">
+            <h1 class="">Electronica</h1>
+            <p> Puedes elegir entre diferentes tipos de filamento, como PLA, ABS, PETG, nylon, madera, metal, etc., según las características y el acabado que quieras obtener. Con un rollo de filamento para impresión 3D, podrás imprimir desde figuras decorativas hasta piezas funcionales, pasando por joyas, prototipos, herramientas y mucho más. </p>
+          </div>
+        </div>
+      </section>
 
-      <div class="mainInsumos__cotizacion w-100 d-flex justify-content-center align-items-center">
-        <div class="w-50 d-flex justify-content-between align-items-center p-5">
+      <div class="mainInsumos__cotizacion w-100 d-flex justify-content-center align-items-center mb-4">
+        <div class="d-flex justify-content-between align-items-center p-5">
           <h1 class="text-center">
             ¿NECESITAS UNA COTIZACIÓN?
           </h1>
-          <a href="https://wa.me/541168652472" class="btn">Pedila ahora</a>
+          <a href="https://wa.me/541168652472" class=" m-4 btn">Pedila ahora</a>
         </div>
 
       </div>
 
     </main>
 
-    <footer class="text-bg-primary row align-items-center h-100 p-2">
+    <footer class="text-bg-primary row align-items-center h-100 p-2 ">
       <div class="col-md-2 col-12-sm p-4">
         <div class="d-flex h-100 align-items-center justify-content-center">
           <a class="navbar-brand" href="../index.html">
@@ -217,6 +219,7 @@
       </div>
       
     </footer>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

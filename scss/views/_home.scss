@@ -29,16 +29,15 @@ main{
     #products
     {
         .main_titulo{
+            padding-left: 10%;
             align-items: start;
-            margin-left: 20%;
-            width: 80%;
         }
     }
     #services
     {
         .main_titulo{
             align-items: end;
-            margin-right: 20%;
+            padding-right: 10%;
        }
     }
 }
@@ -53,7 +52,7 @@ main{
     
 }
 
-@media (max-width: 576px){
+@media (max-width: 768px){
    main{
 
     .main_titulo{
@@ -61,20 +60,20 @@ main{
         
         h1{
             font-size: 3rem;
-            font-weight: 700;
-        }           
+        }
     }
 
     #products
     {
         .main_titulo{
-            align-items: start;
+            align-items: center;
             margin: 0;
         }
     }
     #services
     {
         .main_titulo{
+            align-items: center;
             margin: 0;
        }
     }

@@ -1,12 +1,26 @@
 header{
     height: 120vh;
-    
-    
-    nav{
+    text-shadow: 1px 1px 2px #000;
+    padding-top: 4rem !important;
+
+    .offcanvas{
+
+      
+      /* NAV *******************************************/
+      nav{
         .menu{
-            &__logo{
-            display: none;
-            }
+          &__logo{
+            display: block;
+          }
+          .offcanvas
+          {
+            &-body {
+              // flex-direction: row;
+              background-color: transparent !important;
+              }
+
+          }
+          }
         }
         
         ul{
@@ -27,19 +41,22 @@ header{
         }
     } 
 
+    /*HEADER CARDS *******************************************/
+
     .header__cards{
       &__item
       {
           margin-bottom: 2rem;
-          width: 375px;
-          height: 250px;
+          width: 500px;
+          height: 300px; 
           background-color: $bg-color-primary-40;
           border-radius: 1rem;
           h1{
-            font-size: 1.75rem;
+            font-size: 2.7rem;
+            font-weight: 700;
           }
           p{
-            font-size: 0.9rem;
+            font-size: 1rem;
           }
           a{
             &:hover{
@@ -50,27 +67,38 @@ header{
         }
     }
 
-    .titulo{
-      &__principal{
-          position: relative;
+    /*TITULO DE PAGINA *******************************************/
 
+    .titulo{
+      overflow: clip;
+      animation: fadeInRight 0.6s ease-out;
+      
+      &__principal{
+          animation: fadeInRight 0.3s ease-out;
+          position: relative;
+          
           h1{
-              font-size: 6rem !important;
-              font-weight: 700;
+            font-size: 6rem !important;
+            font-weight: 700;
           }
           h2{
-              color: $bg-color-secondary;
-              opacity: 0.1;
-              font-size: 11rem;
-              font-weight: 700;
-              position: absolute;
-              left: 1rem;
-              top:-5rem;
-              z-index: -2;
+            white-space: nowrap;
+            color: $bg-color-secondary;
+            opacity: 0.1;
+            font-size: 10rem;
+            font-weight: 700;
+            position: absolute;
+            left: 0rem;
+            top:-5rem;
+            z-index: -2;
           }
+        }
+      h3{
+        font-size: 2rem;
+        font-weight: 500;
       }
       p{
-          font-size: 2rem;
+          font-size: 1.2rem;
       }
       a{
           color: white;
@@ -81,7 +109,129 @@ header{
           }
       }
   }
+
+  /*SCROLL DOWN *******************************************/
     
+
+  .srolldown{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    p{
+      margin:0;
+      padding: 0;
+    }
+    img
+    {
+      animation: scrollDown 2s infinite;
+    }
+  }
+  
+}
+
+/*GIF PORTADA INDEX *******************************************/
+
+.header-gif{
+  background-position: center TOP;
+  background-image: url(../assets/images/portada.gif);
+  background-repeat: no-repeat;
+  background-size: auto 120vh;
+}
+
+/*MEDIA QUERY *******************************************/
+
+@media (max-width: 1178px){
+  .nav-item{
+    margin: 0 !important;
+    a{
+      font-size: 1.12rem;
+    } 
+  }
+  
+}
+
+@media (max-width: 991.97px){
+  
+  header nav .menu__logo{
+    display: none;
+  }
+
+  header{
+    text-shadow: 0px 0px 0px #000;
+    .titulo{
+      &__principal{
+          position: relative;
+
+          h1{
+              font-size: 3rem !important;
+              font-weight: 700;
+          }
+          h2{
+              color: $bg-color-secondary;
+              opacity: 0.1;
+              font-size: 5rem;
+              font-weight: 700;
+              position: absolute;
+              left: 0rem;
+              top:-2rem;
+          }
+        }
+        p{
+          font-size: 1.5rem;
+        }
+      }
+
+  .offcanvas .offcanvas-body {
+    // flex-direction: row;
+    background-color: $bg-color-secondary !important;
+  }
+}
+
+  header .header__cards{
+    &__item{
+      width: 500px;
+      height: 300px;
+      h1{
+        font-size: 1.75rem;
+        font-weight: 600;
+      }
+      p{
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px){
+    header{
+      .header__cards{
+        &__item
+        {
+          height: auto;
+        }
+      }
+      .titulo{
+        &__principal{
+            position: relative;
+  
+            h1{
+                font-size: 2rem !important;
+                font-weight: 700;
+            }
+            h2{
+                color: $bg-color-secondary;
+                opacity: 0.1;
+                font-size: 4rem;
+                font-weight: 700;
+                position: absolute;
+                left: 0rem;
+                top:-2rem;
+            }
+          }
+          p{
+            font-size: 0.8rem;
+          }
+        }
 
       .srolldown{
         p{
@@ -92,57 +242,11 @@ header{
           animation: scrollDown 2s infinite;
         }
       }
-  
+
+
+    }
 }
 
-.header-gif{
-  background-position: center TOP;
-  background-image: url(../assets/images/portada.gif);
-  background-repeat: no-repeat;
-  background-size: auto 120vh;
-}
-
-.logo{
-  img{
-    height: 50px;
-    width: 50px;
-    color: white;
-  }
-}
-
-
-@media (min-width: 992px){
-  
-    header nav .menu__logo{
-      display: block;
-    }
-  
-    header{
-      text-shadow: 1px 1px 2px #000;
-    }
-  
-    .offcanvas .offcanvas-body {
-      // flex-direction: row;
-      background-color: transparent !important;
-    }
-  
-    .offcanvas .offcanvas-body .navbar-nav{
-      align-items: center;
-    }
-
-    header .header__cards{
-      &__item{
-        width: 500px;
-        height: 300px;
-        h1{
-          font-size: 2.7rem;
-        }
-        p{
-          font-size: 1rem;
-        }
-      }
-    }
-  }
   
 
   @keyframes scrollDown
@@ -160,4 +264,15 @@ header{
       transform: translateY(10px);
     }
 
+  }
+
+  @keyframes fadeInRight{
+    0% {
+      transform: translateX(20%);
+      opacity: 0;
+    }
+    100%{
+      transform: translateX(0px);
+      opacity: 1;
+    }  
   }

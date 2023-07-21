@@ -1,16 +1,11 @@
-
-
-
 .mainInsumos{
+
     .producto{
         color: white;
         img{
-            width: 35%;
-            #filamento{
-                width: 30%;
-            }
+            height: 600px;
         }
-        div{
+        &__texto{
             padding: 2%;
             h1{
                 font-size: 5rem;
@@ -20,7 +15,6 @@
                 font-size: 1.25rem !important;
                 font-weight: 400;
                 text-shadow: 1px 1px 1px $bg-color-secondary;
-                width: 79%;
             }
         }
     }
@@ -35,7 +29,6 @@
             }
             a{
                 background-color: $bg-color-primary;
-                height: 60%;
                 color: white;
                 &:hover{
                     background-color: $bg-color-secondary;
@@ -45,5 +38,37 @@
         }
     }
 
+}
+
+@media (max-width:  1198.98px){
+    .mainInsumos{
+        .producto{
+            color: white;
+            img{
+                height: 200px;
+            }
+            &__texto{
+                padding: 2%;
+                h1{
+                    font-size: 2rem;
+                    font-weight: 700;
+                }
+                p{
+                    font-size: 1rem !important;
+                    font-weight: 400;
+                    text-shadow: 1px 1px 1px $bg-color-secondary;
+                }
+            }
+            
+        }
+        &__cotizacion{
+            div 
+            {
+                h1{
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
 }
 

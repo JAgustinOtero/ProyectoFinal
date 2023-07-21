@@ -1,9 +1,22 @@
 .ender3_header{
     height: 100vh;
+    background-image: url(../../assets/images/ender3.png) !important;
 }
 
 .main_ender3{
     section{
-        height: 60vh;
+        height: 80vh;
     }
+}
+
+.tag-carousel-ender3
+{
+    font-size: 2rem !important;
+    text-shadow: 1px 1px 1px $bg-color-secondary;
+}
+
+.carousel-caption{
+    position: static;
+    display: flex;
+    justify-content: center;
 }

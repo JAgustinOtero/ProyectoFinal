@@ -6,87 +6,155 @@
 body {
   background: linear-gradient(180deg, #212550, #515473 50%, #dee2e6 100%); }
 
+.logo img {
+  height: 50px;
+  width: 50px;
+  color: white; }
+
 header {
-  height: 120vh; }
-  header nav .menu__logo {
-    display: none; }
-  header nav ul {
-    text-shadow: 1px; }
-    header nav ul li {
-      margin-left: 15px;
-      margin-right: 15px; }
-      header nav ul li ul {
-        text-shadow: 0px 0px 0px #000; }
-  header nav .redes {
-    position: relative;
-    right: 10px; }
+  height: 120vh;
+  text-shadow: 1px 1px 2px #000;
+  padding-top: 4rem !important;
+  /*HEADER CARDS *******************************************/
+  /*TITULO DE PAGINA *******************************************/
+  /*SCROLL DOWN *******************************************/ }
+  header .offcanvas {
+    /* NAV *******************************************/ }
+    header .offcanvas nav .menu__logo {
+      display: block; }
+    header .offcanvas nav .menu .offcanvas-body {
+      background-color: transparent !important; }
+    header .offcanvas ul {
+      text-shadow: 1px; }
+      header .offcanvas ul li {
+        margin-left: 15px;
+        margin-right: 15px; }
+        header .offcanvas ul li ul {
+          text-shadow: 0px 0px 0px #000; }
+    header .offcanvas .redes {
+      position: relative;
+      right: 10px; }
   header .header__cards__item {
     margin-bottom: 2rem;
-    width: 375px;
-    height: 250px;
+    width: 500px;
+    height: 300px;
     background-color: rgba(33, 37, 80, 0.4);
     border-radius: 1rem; }
     header .header__cards__item h1 {
-      font-size: 1.75rem; }
+      font-size: 2.7rem;
+      font-weight: 700; }
     header .header__cards__item p {
-      font-size: 0.9rem; }
+      font-size: 1rem; }
     header .header__cards__item a:hover {
       background-color: #aeb3f4 !important;
       color: black; }
-  header .titulo__principal {
-    position: relative; }
-    header .titulo__principal h1 {
-      font-size: 6rem !important;
-      font-weight: 700; }
-    header .titulo__principal h2 {
-      color: #aeb3f4;
-      opacity: 0.1;
-      font-size: 11rem;
-      font-weight: 700;
-      position: absolute;
-      left: 1rem;
-      top: -5rem;
-      z-index: -2; }
-  header .titulo p {
-    font-size: 2rem; }
-  header .titulo a {
-    color: white;
-    background-color: #212550; }
-    header .titulo a:hover {
-      background-color: #aeb3f4;
-      color: black; }
-  header .srolldown p {
-    margin-bottom: 0; }
-  header .srolldown img {
-    animation: scrollDown 2s infinite; }
+  header .titulo {
+    overflow: clip;
+    animation: fadeInRight 0.6s ease-out; }
+    header .titulo__principal {
+      animation: fadeInRight 0.3s ease-out;
+      position: relative; }
+      header .titulo__principal h1 {
+        font-size: 6rem !important;
+        font-weight: 700; }
+      header .titulo__principal h2 {
+        white-space: nowrap;
+        color: #aeb3f4;
+        opacity: 0.1;
+        font-size: 10rem;
+        font-weight: 700;
+        position: absolute;
+        left: 0rem;
+        top: -5rem;
+        z-index: -2; }
+    header .titulo h3 {
+      font-size: 2rem;
+      font-weight: 500; }
+    header .titulo p {
+      font-size: 1.2rem; }
+    header .titulo a {
+      color: white;
+      background-color: #212550; }
+      header .titulo a:hover {
+        background-color: #aeb3f4;
+        color: black; }
+  header .srolldown {
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+    header .srolldown p {
+      margin: 0;
+      padding: 0; }
+    header .srolldown img {
+      animation: scrollDown 2s infinite; }
 
+/*GIF PORTADA INDEX *******************************************/
 .header-gif {
   background-position: center TOP;
   background-image: url(../assets/images/portada.gif);
   background-repeat: no-repeat;
   background-size: auto 120vh; }
 
-.logo img {
-  height: 50px;
-  width: 50px;
-  color: white; }
+/*MEDIA QUERY *******************************************/
+@media (max-width: 1178px) {
+  .nav-item {
+    margin: 0 !important; }
+    .nav-item a {
+      font-size: 1.12rem; } }
 
-@media (min-width: 992px) {
+@media (max-width: 991.97px) {
   header nav .menu__logo {
-    display: block; }
+    display: none; }
   header {
-    text-shadow: 1px 1px 2px #000; }
-  .offcanvas .offcanvas-body {
-    background-color: transparent !important; }
-  .offcanvas .offcanvas-body .navbar-nav {
-    align-items: center; }
+    text-shadow: 0px 0px 0px #000; }
+    header .titulo__principal {
+      position: relative; }
+      header .titulo__principal h1 {
+        font-size: 3rem !important;
+        font-weight: 700; }
+      header .titulo__principal h2 {
+        color: #aeb3f4;
+        opacity: 0.1;
+        font-size: 5rem;
+        font-weight: 700;
+        position: absolute;
+        left: 0rem;
+        top: -2rem; }
+    header .titulo p {
+      font-size: 1.5rem; }
+    header .offcanvas .offcanvas-body {
+      background-color: #aeb3f4 !important; }
   header .header__cards__item {
     width: 500px;
     height: 300px; }
     header .header__cards__item h1 {
-      font-size: 2.7rem; }
+      font-size: 1.75rem;
+      font-weight: 600; }
     header .header__cards__item p {
-      font-size: 1rem; } }
+      font-size: 0.9rem; } }
+
+@media (max-width: 576px) {
+  header .header__cards__item {
+    height: auto; }
+  header .titulo__principal {
+    position: relative; }
+    header .titulo__principal h1 {
+      font-size: 2rem !important;
+      font-weight: 700; }
+    header .titulo__principal h2 {
+      color: #aeb3f4;
+      opacity: 0.1;
+      font-size: 4rem;
+      font-weight: 700;
+      position: absolute;
+      left: 0rem;
+      top: -2rem; }
+  header .titulo p {
+    font-size: 0.8rem; }
+  header .srolldown p {
+    margin-bottom: 0; }
+  header .srolldown img {
+    animation: scrollDown 2s infinite; } }
 
 @keyframes scrollDown {
   0% {
@@ -95,6 +163,14 @@ header {
     transform: translateY(-10px); }
   100% {
     transform: translateY(10px); } }
+
+@keyframes fadeInRight {
+  0% {
+    transform: translateX(20%);
+    opacity: 0; }
+  100% {
+    transform: translateX(0px);
+    opacity: 1; } }
 
 footer {
   height: 20vh; }
@@ -147,47 +223,43 @@ main .main_titulo {
     width: 50%; }
 
 main #products .main_titulo {
-  align-items: start;
-  margin-left: 20%;
-  width: 80%; }
+  padding-left: 10%;
+  align-items: start; }
 
 main #services .main_titulo {
   align-items: end;
-  margin-right: 20%; }
+  padding-right: 10%; }
 
 @media (max-width: 992px) {
   main h1 {
     font-size: 3rem;
     font-weight: 800; } }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   main .main_titulo {
     align-items: start; }
     main .main_titulo h1 {
-      font-size: 3rem;
-      font-weight: 700; }
+      font-size: 3rem; }
   main #products .main_titulo {
-    align-items: start;
+    align-items: center;
     margin: 0; }
   main #services .main_titulo {
+    align-items: center;
     margin: 0; } }
 
 .mainInsumos .producto {
   color: white; }
   .mainInsumos .producto img {
-    width: 35%; }
-    .mainInsumos .producto img #filamento {
-      width: 30%; }
-  .mainInsumos .producto div {
+    height: 600px; }
+  .mainInsumos .producto__texto {
     padding: 2%; }
-    .mainInsumos .producto div h1 {
+    .mainInsumos .producto__texto h1 {
       font-size: 5rem;
       font-weight: 700; }
-    .mainInsumos .producto div p {
+    .mainInsumos .producto__texto p {
       font-size: 1.25rem !important;
       font-weight: 400;
-      text-shadow: 1px 1px 1px #aeb3f4;
-      width: 79%; }
+      text-shadow: 1px 1px 1px #aeb3f4; }
 
 .mainInsumos__cotizacion {
   height: 30vh; }
@@ -198,16 +270,42 @@ main #services .main_titulo {
       font-weight: 900; }
     .mainInsumos__cotizacion div a {
       background-color: #212550;
-      height: 60%;
       color: white; }
       .mainInsumos__cotizacion div a:hover {
         background-color: #aeb3f4; }
 
+@media (max-width: 1198.98px) {
+  .mainInsumos .producto {
+    color: white; }
+    .mainInsumos .producto img {
+      height: 200px; }
+    .mainInsumos .producto__texto {
+      padding: 2%; }
+      .mainInsumos .producto__texto h1 {
+        font-size: 2rem;
+        font-weight: 700; }
+      .mainInsumos .producto__texto p {
+        font-size: 1rem !important;
+        font-weight: 400;
+        text-shadow: 1px 1px 1px #aeb3f4; }
+  .mainInsumos__cotizacion div h1 {
+    font-size: 2rem; } }
+
 .ender3_header {
-  height: 100vh; }
+  height: 100vh;
+  background-image: url(../../assets/images/ender3.png) !important; }
 
 .main_ender3 section {
-  height: 60vh; }
+  height: 80vh; }
+
+.tag-carousel-ender3 {
+  font-size: 2rem !important;
+  text-shadow: 1px 1px 1px #aeb3f4; }
+
+.carousel-caption {
+  position: static;
+  display: flex;
+  justify-content: center; }
 
 .card {
   border-radius: 15px !important;
@@ -311,6 +409,10 @@ main #services .main_titulo {
 #carouselMainIndex .carousel-inner img {
   margin: auto; }
 
+@media (max-width: 768px) {
+  #carouselMainIndex {
+    display: none; } }
+
 .dropdown-menu .dropdown-item {
   transition: transform 2s ease-out; }
   .dropdown-menu .dropdown-item:hover {
@@ -322,6 +424,9 @@ main #services .main_titulo {
 
 .text-bg-primary {
   background-color: #212550 !important; }
+
+.text-bg-primary-40 {
+  background-color: rgba(33, 37, 80, 0.4) !important; }
 
 .text-bg-secondary {
   background-color: #aeb3f4 !important; }

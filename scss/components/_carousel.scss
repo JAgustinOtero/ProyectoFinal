@@ -33,3 +33,9 @@
         }
     }
   }
+
+  @media (max-width: 768px){
+    #carouselMainIndex{
+        display: none;
+    }
+  }
