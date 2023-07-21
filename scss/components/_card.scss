@@ -93,6 +93,25 @@
 }
 
 
+@media (max-width: 576px){
+    .card{
+
+        &__link{
+            &:hover{
+                img{
+                    animation: none;
+                }
+                color: white;
+                .card__link__text{
+                    display: none;
+                    
+                }
+            }
+            }
+    }
+}
+
+
 @keyframes blurProgressive
 {
 
