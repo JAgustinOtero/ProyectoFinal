@@ -292,20 +292,38 @@ main #services .main_titulo {
     font-size: 2rem; } }
 
 .ender3_header {
-  height: 100vh;
-  background-image: url(../../assets/images/ender3.png) !important; }
+  height: 100vh; }
+  .ender3_header .imagen_principal img {
+    height: 700px; }
 
 .main_ender3 section {
   height: 80vh; }
 
-.tag-carousel-ender3 {
+.main_ender3 .tag-carousel-ender3 {
   font-size: 2rem !important;
   text-shadow: 1px 1px 1px #aeb3f4; }
 
-.carousel-caption {
+.main_ender3 .carousel-caption {
   position: static;
   display: flex;
   justify-content: center; }
+
+@media (max-width: 1200px) {
+  .ender3_header {
+    height: 100vh; }
+    .ender3_header .imagen_principal img {
+      height: 400px; } }
+
+@media (max-width: 580px) {
+  .ender3_header {
+    height: 100vh; }
+  .imagen_principal img {
+    width: 400px;
+    height: auto; }
+  .section1 h1 {
+    font-size: 2rem; }
+  .section1 h2 {
+    font-size: 1rem; } }
 
 .card {
   border-radius: 15px !important;

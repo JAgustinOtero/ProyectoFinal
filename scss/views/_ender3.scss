@@ -1,22 +1,64 @@
 .ender3_header{
     height: 100vh;
-    background-image: url(../../assets/images/ender3.png) !important;
+
+    .imagen_principal{
+        img{
+            height: 700px;
+        }
+    }
+
 }
 
 .main_ender3{
     section{
         height: 80vh;
     }
+    .tag-carousel-ender3
+    {
+        font-size: 2rem !important;
+        text-shadow: 1px 1px 1px $bg-color-secondary;
+    }
+    
+    .carousel-caption{
+        position: static;
+        display: flex;
+        justify-content: center;
+    }
 }
 
-.tag-carousel-ender3
-{
-    font-size: 2rem !important;
-    text-shadow: 1px 1px 1px $bg-color-secondary;
-}
 
-.carousel-caption{
-    position: static;
-    display: flex;
-    justify-content: center;
-}
+@media (max-width: 1200px){
+    .ender3_header{
+        height: 100vh;
+    
+        .imagen_principal{
+            img{
+                height: 400px;
+            }
+        }
+    
+    }
+} 
+
+@media (max-width: 580px){
+    .ender3_header{
+        height: 100vh;
+        }
+
+    .imagen_principal{
+        img{
+            width: 400px;
+            height: auto;
+        }
+    }
+    
+    .section1{
+        h1{
+            font-size: 2rem;
+        }
+        h2{
+            font-size: 1rem;
+        }
+    }
+
+    }
