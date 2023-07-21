@@ -120,8 +120,12 @@ header {
         position: absolute;
         left: 0rem;
         top: -2rem; }
+    header .titulo h3 {
+      font-size: 1.6rem;
+      font-weight: 500; }
     header .titulo p {
-      font-size: 1.5rem; }
+      font-size: 1rem;
+      width: 80%; }
     header .offcanvas .offcanvas-body {
       background-color: #aeb3f4 !important; }
   header .header__cards__item {
@@ -139,18 +143,22 @@ header {
   header .titulo__principal {
     position: relative; }
     header .titulo__principal h1 {
-      font-size: 2rem !important;
+      font-size: 3.5rem !important;
       font-weight: 700; }
     header .titulo__principal h2 {
       color: #aeb3f4;
       opacity: 0.1;
-      font-size: 4rem;
+      font-size: 5.5rem;
       font-weight: 700;
       position: absolute;
       left: 0rem;
       top: -2rem; }
+  header .titulo h3 {
+    font-size: 1.6rem;
+    font-weight: 500; }
   header .titulo p {
-    font-size: 0.8rem; }
+    font-size: 1rem;
+    width: 100%; }
   header .srolldown p {
     margin-bottom: 0; }
   header .srolldown img {
@@ -294,10 +302,10 @@ main #services .main_titulo {
 .ender3_header {
   height: 100vh; }
   .ender3_header .imagen_principal img {
-    height: 700px; }
-
-.main_ender3 section {
-  height: 80vh; }
+    position: relative;
+    left: -50px;
+    height: 700px;
+    z-index: -2; }
 
 .main_ender3 .tag-carousel-ender3 {
   font-size: 2rem !important;
@@ -308,22 +316,138 @@ main #services .main_titulo {
   display: flex;
   justify-content: center; }
 
+.main_ender3 .section2__content__image img {
+  height: 600px; }
+
+.main_ender3 .section2__content__text h1 {
+  width: 75%; }
+
+.main_ender3 .section2__content__text p {
+  width: 75%; }
+
+.main_ender3 .section3__contenido .row .caja {
+  height: 40vh;
+  margin-top: 6%;
+  margin-bottom: 3%;
+  height: 100%; }
+  .main_ender3 .section3__contenido .row .caja__img img {
+    position: relative;
+    transform: scale(1.1);
+    top: -15%;
+    left: -25%;
+    height: 400px !important; }
+  .main_ender3 .section3__contenido .row .caja__titulo {
+    position: relative;
+    top: 10%;
+    left: -10%; }
+    .main_ender3 .section3__contenido .row .caja__titulo h1 {
+      font-weight: 700; }
+    .main_ender3 .section3__contenido .row .caja__titulo p {
+      font-size: 1rem !important; }
+
+@media (max-width: 1400px) {
+  .ender3_header .imagen_principal img {
+    height: 600px; }
+  .main_ender3 .section2__content__text h1 {
+    width: 100%; }
+  .main_ender3 .section3__contenido .row .caja {
+    height: 35vh; }
+    .main_ender3 .section3__contenido .row .caja__img img {
+      transform: scale(1.1);
+      top: -10%;
+      left: -15%;
+      height: 300px !important; }
+    .main_ender3 .section3__contenido .row .caja__titulo {
+      position: relative;
+      top: 10%;
+      left: -10%; }
+      .main_ender3 .section3__contenido .row .caja__titulo p {
+        font-size: 0.8rem !important; } }
+
 @media (max-width: 1200px) {
   .ender3_header {
     height: 100vh; }
     .ender3_header .imagen_principal img {
-      height: 400px; } }
+      height: 500px; }
+  .main_ender3 .section3__contenido .row .caja {
+    height: 30vh; }
+    .main_ender3 .section3__contenido .row .caja__img img {
+      transform: scale(1.1);
+      top: -10%;
+      left: -15%;
+      height: 250px !important; }
+    .main_ender3 .section3__contenido .row .caja__titulo {
+      position: relative;
+      top: 10%;
+      left: -15%; }
+      .main_ender3 .section3__contenido .row .caja__titulo p {
+        font-size: 0.7rem !important; } }
 
-@media (max-width: 580px) {
-  .ender3_header {
-    height: 100vh; }
-  .imagen_principal img {
-    width: 400px;
+@media (max-width: 992px) {
+  .main_ender3 .section3__contenido .row .caja {
+    height: 30vh;
+    width: 75%; }
+    .main_ender3 .section3__contenido .row .caja__img img {
+      transform: scale(1.1);
+      top: -10%;
+      left: -15%;
+      height: 250px !important; }
+    .main_ender3 .section3__contenido .row .caja__titulo {
+      position: relative;
+      top: 10%;
+      left: -15%; }
+      .main_ender3 .section3__contenido .row .caja__titulo p {
+        font-size: 0.7rem !important; } }
+
+@media (max-width: 768px) {
+  .ender3_header .imagen_principal img {
+    width: 300px;
     height: auto; }
   .section1 h1 {
     font-size: 2rem; }
   .section1 h2 {
-    font-size: 1rem; } }
+    font-size: 1rem; }
+  .section2__content__image img {
+    height: auto !important;
+    width: 500px; }
+  .section2__content__text h1 {
+    font-size: 2rem; } }
+
+@media (max-width: 580px) {
+  .ender3_header {
+    height: 100vh; }
+    .ender3_header .imagen_principal img {
+      position: static;
+      width: 375px;
+      height: auto; }
+  .main_ender3 .section1 h1 {
+    font-size: 2rem; }
+  .main_ender3 .section1 h2 {
+    font-size: 1rem; }
+  .main_ender3 .section2__content {
+    flex-direction: column-reverse; }
+    .main_ender3 .section2__content__image img {
+      height: auto !important;
+      width: 375px; }
+    .main_ender3 .section2__content__text h1 {
+      width: 75%;
+      align-self: center;
+      font-size: 2rem; }
+    .main_ender3 .section2__content__text p {
+      align-self: center; }
+  .main_ender3 .section3__contenido .row .caja {
+    height: 31vh; }
+    .main_ender3 .section3__contenido .row .caja__img img {
+      transform: scale(1);
+      left: -50%; }
+    .main_ender3 .section3__contenido .row .caja__titulo {
+      position: relative;
+      top: 7%;
+      left: -15%; }
+      .main_ender3 .section3__contenido .row .caja__titulo h1 {
+        font-size: 1.5rem; }
+      .main_ender3 .section3__contenido .row .caja__titulo p {
+        font-size: 0.6rem; } }
 
 .card {
   border-radius: 15px !important;
@@ -449,5 +573,23 @@ main #services .main_titulo {
 .text-bg-secondary {
   background-color: #aeb3f4 !important; }
 
+.text-bg-secondary-40 {
+  background-color: rgba(174, 179, 244, 0.4) !important; }
+
 .text-bg-tertiary {
   background-color: #636ff2 !important; }
+
+.text-bg-tertiary-40 {
+  background-color: rgba(99, 111, 242, 0.4) !important; }
+
+.text-bg-cautro {
+  background-color: #515473 !important; }
+
+.text-bg-cautro-40 {
+  background-color: rgba(81, 84, 115, 0.4) !important; }
+
+.text-bg-quinto {
+  background-color: #4e58bf; }
+
+.text-bg-quinto-40 {
+  background-color: rgba(78, 88, 191, 0.4); }

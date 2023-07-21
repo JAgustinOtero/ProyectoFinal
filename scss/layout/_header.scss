@@ -176,8 +176,13 @@ header{
               top:-2rem;
           }
         }
+        h3{
+          font-size: 1.6rem;
+          font-weight: 500;
+        }
         p{
-          font-size: 1.5rem;
+          font-size: 1rem;
+          width: 80%;
         }
       }
 
@@ -215,21 +220,26 @@ header{
             position: relative;
   
             h1{
-                font-size: 2rem !important;
+                font-size: 3.5rem !important;
                 font-weight: 700;
             }
             h2{
                 color: $bg-color-secondary;
                 opacity: 0.1;
-                font-size: 4rem;
+                font-size: 5.5rem;
                 font-weight: 700;
                 position: absolute;
                 left: 0rem;
                 top:-2rem;
             }
           }
+          h3{
+            font-size: 1.6rem;
+            font-weight: 500;
+          }
           p{
-            font-size: 0.8rem;
+            font-size: 1rem;
+            width: 100%;
           }
         }
 
