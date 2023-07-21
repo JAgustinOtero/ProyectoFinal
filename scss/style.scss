@@ -11,6 +11,7 @@
 @import "views/productos";
 @import "views/insumos";
 @import "views/ender3";
+@import "views/ender3S1";
 
 @import "components/card";
 @import "components/carousel";
@@ -29,6 +30,10 @@
 
   .text-bg-primary-40{
     background-color: $bg-color-primary-40 !important;
+  }
+
+  .text-bg-primary-80{
+    background-color: $bg-color-primary-80 !important;
   }
 
   .text-bg-secondary{
