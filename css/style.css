@@ -1,16 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-body {
-  background: linear-gradient(180deg, #212550, #515473 50%, #dee2e6 100%); }
-
-.logo img {
-  height: 50px;
-  width: 50px;
-  color: white; }
-
 header {
   height: 120vh;
   text-shadow: 1px 1px 2px #000;
@@ -209,6 +196,83 @@ footer {
 .btn-tertiary {
   background-color: #636ff2; }
 
+.ServiciosMain .Trabajos h1 {
+  font-size: 6rem;
+  font-weight: 800; }
+
+.ServiciosMain .Trabajos__Muestras__Imagenes {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
+  .ServiciosMain .Trabajos__Muestras__Imagenes img {
+    border-radius: 2vh;
+    height: 300px !important;
+    width: 300px; }
+
+.ServiciosMain .materiales__PLA img {
+  height: 20vh; }
+
+.ServiciosMain .materiales__PLA__texto h1 {
+  font-size: 3rem;
+  font-weight: 700; }
+
+.ServiciosMain .materiales__PLA__texto p {
+  font-size: 1rem !important;
+  font-weight: 500; }
+
+.ServiciosMain .Servicio {
+  height: 120vh;
+  position: relative;
+  overflow: hidden; }
+
+.ServiciosMain .ServicioTexto {
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  height: 100vh !important;
+  padding: 2%; }
+  .ServiciosMain .ServicioTexto h1 {
+    align-self: center;
+    font-size: 6rem;
+    color: white;
+    font-weight: 800;
+    width: 75%; }
+  .ServiciosMain .ServicioTexto p {
+    align-self: center;
+    font-size: 1.5rem !important;
+    color: white;
+    width: 75%; }
+  .ServiciosMain .ServicioTexto a {
+    align-self: center;
+    font-size: 1.5rem !important;
+    color: white;
+    width: fit-content; }
+
+.ServiciosMain .ServicioImagen {
+  width: 100%;
+  position: relative; }
+  .ServiciosMain .ServicioImagen img {
+    height: 100vh;
+    position: absolute;
+    bottom: 0px;
+    z-index: -2; }
+
+@media (max-width: 1200px) {
+  .ServiciosMain .ServicioTexto h1 {
+    font-size: 5rem !important; }
+  .ServiciosMain .ServicioTexto p {
+    font-size: 1rem !important;
+    color: white; } }
+
+@media (max-width: 580px) {
+  .ServiciosMain .ServicioTexto h1 {
+    font-size: 4rem !important; }
+  .ServiciosMain .ServicioTexto p {
+    font-size: 1rem !important;
+    color: white; }
+  .ServiciosMain .ServicioTexto a {
+    font-size: 1rem !important; } }
+
 main p {
   font-size: 0.95rem !important; }
 
@@ -255,12 +319,12 @@ main #services .main_titulo {
     align-items: center;
     margin: 0; } }
 
-.mainInsumos .producto {
-  color: white; }
-  .mainInsumos .producto img {
-    height: 600px; }
-  .mainInsumos .producto__texto {
-    padding: 2%; }
+.mainInsumos {
+  overflow: hidden; }
+  .mainInsumos .producto {
+    color: white; }
+    .mainInsumos .producto img {
+      width: 600px; }
     .mainInsumos .producto__texto h1 {
       font-size: 5rem;
       font-weight: 700; }
@@ -268,36 +332,38 @@ main #services .main_titulo {
       font-size: 1.25rem !important;
       font-weight: 400;
       text-shadow: 1px 1px 1px #aeb3f4; }
+  .mainInsumos__cotizacion {
+    height: 30vh; }
+    .mainInsumos__cotizacion div {
+      background-color: rgba(33, 37, 80, 0.4); }
+      .mainInsumos__cotizacion div h1 {
+        font-size: 3rem;
+        font-weight: 900; }
+      .mainInsumos__cotizacion div a {
+        background-color: #212550;
+        color: white; }
+        .mainInsumos__cotizacion div a:hover {
+          background-color: #aeb3f4; }
 
-.mainInsumos__cotizacion {
-  height: 30vh; }
-  .mainInsumos__cotizacion div {
-    background-color: rgba(33, 37, 80, 0.4); }
-    .mainInsumos__cotizacion div h1 {
-      font-size: 3rem;
-      font-weight: 900; }
-    .mainInsumos__cotizacion div a {
-      background-color: #212550;
-      color: white; }
-      .mainInsumos__cotizacion div a:hover {
-        background-color: #aeb3f4; }
-
-@media (max-width: 1198.98px) {
-  .mainInsumos .producto {
-    color: white; }
-    .mainInsumos .producto img {
-      height: 200px; }
-    .mainInsumos .producto__texto {
-      padding: 2%; }
-      .mainInsumos .producto__texto h1 {
-        font-size: 2rem;
-        font-weight: 700; }
-      .mainInsumos .producto__texto p {
-        font-size: 1rem !important;
-        font-weight: 400;
-        text-shadow: 1px 1px 1px #aeb3f4; }
+@media (max-width: 992px) {
+  .mainInsumos .producto img {
+    width: 300px; }
+  .mainInsumos .producto__texto h1 {
+    font-size: 3rem; }
+  .mainInsumos .producto__texto p {
+    font-size: 1rem !important; }
   .mainInsumos__cotizacion div h1 {
     font-size: 2rem; } }
+
+@media (max-width: 576px) {
+  .mainInsumos .producto img {
+    width: 250px; }
+  .mainInsumos .producto__texto h1 {
+    font-size: 2rem; }
+  .mainInsumos .producto__texto p {
+    font-size: 1rem !important; }
+  .mainInsumos__cotizacion div h1 {
+    font-size: 1rem; } }
 
 .main_ender3V2 .section1 {
   height: 80vh;
@@ -1155,6 +1221,19 @@ main #services .main_titulo {
   .dropdown-menu .dropdown-item:hover {
     background-color: transparent;
     transform: translate(30px); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background: linear-gradient(180deg, #212550, #515473 50%, #dee2e6 100%); }
+
+.logo img {
+  height: 50px;
+  width: 50px;
+  color: white; }
 
 .text-bg-transparent {
   background-color: transparent !important; }

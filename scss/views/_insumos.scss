@@ -1,12 +1,11 @@
 .mainInsumos{
-
+    overflow: hidden;
     .producto{
         color: white;
         img{
-            height: 600px;
+            width: 600px;
         }
         &__texto{
-            padding: 2%;
             h1{
                 font-size: 5rem;
                 font-weight: 700;
@@ -40,23 +39,18 @@
 
 }
 
-@media (max-width:  1198.98px){
+@media (max-width:  992px){
     .mainInsumos{
         .producto{
-            color: white;
             img{
-                height: 200px;
+                width: 300px;
             }
             &__texto{
-                padding: 2%;
                 h1{
-                    font-size: 2rem;
-                    font-weight: 700;
+                    font-size: 3rem;
                 }
                 p{
                     font-size: 1rem !important;
-                    font-weight: 400;
-                    text-shadow: 1px 1px 1px $bg-color-secondary;
                 }
             }
             
@@ -72,3 +66,30 @@
     }
 }
 
+
+@media (max-width:  576px){
+    .mainInsumos{
+        .producto{
+            img{
+                width: 250px;
+            }
+            &__texto{
+                h1{
+                    font-size: 2rem;
+                }
+                p{
+                    font-size: 1rem !important;
+                }
+            }
+            
+        }
+        &__cotizacion{
+            div 
+            {
+                h1{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
