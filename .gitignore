@@ -38,5 +38,6 @@
 *.ilf
 *.map
 *.tds
+*.zip
 
 node_modules/
