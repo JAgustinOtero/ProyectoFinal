@@ -11,6 +11,9 @@ header{
         .menu{
           &__logo{
             display: block;
+            img{
+              height: 50px;
+            }
           }
           .offcanvas
           {
@@ -127,7 +130,13 @@ header{
     }
   }
   
+  .logo{
+    height: 50px;
+  }
 }
+
+
+
 
 /*GIF PORTADA INDEX *******************************************/
 

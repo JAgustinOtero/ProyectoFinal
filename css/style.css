@@ -9,6 +9,8 @@ header {
     /* NAV *******************************************/ }
     header .offcanvas nav .menu__logo {
       display: block; }
+      header .offcanvas nav .menu__logo img {
+        height: 50px; }
     header .offcanvas nav .menu .offcanvas-body {
       background-color: transparent !important; }
     header .offcanvas ul {
@@ -74,6 +76,8 @@ header {
       padding: 0; }
     header .srolldown img {
       animation: scrollDown 2s infinite; }
+  header .logo {
+    height: 50px; }
 
 /*GIF PORTADA INDEX *******************************************/
 .header-gif {
@@ -265,13 +269,16 @@ footer {
     color: white; } }
 
 @media (max-width: 580px) {
+  .ServiciosMain .Trabajos h1 {
+    font-size: 3rem;
+    font-weight: 700; }
   .ServiciosMain .ServicioTexto h1 {
-    font-size: 4rem !important; }
+    font-size: 3rem !important; }
   .ServiciosMain .ServicioTexto p {
-    font-size: 1rem !important;
+    font-size: 0.8rem !important;
     color: white; }
   .ServiciosMain .ServicioTexto a {
-    font-size: 1rem !important; } }
+    font-size: 0.8rem !important; } }
 
 main p {
   font-size: 0.95rem !important; }
