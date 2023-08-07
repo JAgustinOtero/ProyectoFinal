@@ -44,32 +44,6 @@ header{
         }
     } 
 
-    /*HEADER CARDS *******************************************/
-
-    .header__cards{
-      &__item
-      {
-          margin-bottom: 2rem;
-          width: 500px;
-          height: 300px; 
-          background-color: $bg-color-primary-40;
-          border-radius: 1rem;
-          h1{
-            font-size: 2.7rem;
-            font-weight: 700;
-          }
-          p{
-            font-size: 1rem;
-          }
-          a{
-            &:hover{
-              background-color: $bg-color-secondary !important;
-              color: black;
-            }
-          }
-        }
-    }
-
     /*TITULO DE PAGINA *******************************************/
 
     .titulo{
