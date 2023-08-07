@@ -1,7 +1,6 @@
 header {
   height: 120vh;
   text-shadow: 1px 1px 2px #000;
-  padding-top: 4rem !important;
   /*HEADER CARDS *******************************************/
   /*TITULO DE PAGINA *******************************************/
   /*SCROLL DOWN *******************************************/ }
@@ -200,18 +199,27 @@ footer {
 .btn-tertiary {
   background-color: #636ff2; }
 
+.ServicioHeader .imagen_principal img {
+  position: relative;
+  left: -200px;
+  top: 130px;
+  z-index: -2;
+  height: 400px; }
+
 .ServiciosMain .Trabajos h1 {
   font-size: 6rem;
   font-weight: 800; }
 
-.ServiciosMain .Trabajos__Muestras__Imagenes {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap; }
-  .ServiciosMain .Trabajos__Muestras__Imagenes img {
-    border-radius: 2vh;
-    height: 300px !important;
-    width: 300px; }
+.ServiciosMain .Trabajos__Muestras {
+  color: white; }
+  .ServiciosMain .Trabajos__Muestras__Imagenes {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; }
+    .ServiciosMain .Trabajos__Muestras__Imagenes img {
+      border-radius: 2vh;
+      height: 300px !important;
+      width: 300px; }
 
 .ServiciosMain .materiales__PLA img {
   height: 20vh; }
@@ -225,7 +233,6 @@ footer {
   font-weight: 500; }
 
 .ServiciosMain .Servicio {
-  height: 120vh;
   position: relative;
   overflow: hidden; }
 
@@ -261,6 +268,11 @@ footer {
     bottom: 0px;
     z-index: -2; }
 
+@media (max-width: 1400px) {
+  .ServicioHeader .imagen_principal img {
+    height: 350px;
+    left: -100px; } }
+
 @media (max-width: 1200px) {
   .ServiciosMain .ServicioTexto h1 {
     font-size: 5rem !important; }
@@ -269,6 +281,10 @@ footer {
     color: white; } }
 
 @media (max-width: 580px) {
+  .ServicioHeader .imagen_principal img {
+    left: 0px;
+    top: 50px;
+    height: 300px; }
   .ServiciosMain .Trabajos h1 {
     font-size: 3rem;
     font-weight: 700; }
@@ -326,6 +342,13 @@ main #services .main_titulo {
     align-items: center;
     margin: 0; } }
 
+.headerInsumos .imagen_principal img {
+  position: relative;
+  left: -200px;
+  top: 100px;
+  height: 400px;
+  z-index: -2; }
+
 .mainInsumos {
   overflow: hidden; }
   .mainInsumos .producto {
@@ -352,6 +375,11 @@ main #services .main_titulo {
         .mainInsumos__cotizacion div a:hover {
           background-color: #aeb3f4; }
 
+@media (max-width: 1400px) {
+  .headerInsumos .imagen_principal img {
+    height: 350px;
+    left: -100px; } }
+
 @media (max-width: 992px) {
   .mainInsumos .producto img {
     width: 300px; }
@@ -363,6 +391,10 @@ main #services .main_titulo {
     font-size: 2rem; } }
 
 @media (max-width: 576px) {
+  .headerInsumos .imagen_principal img {
+    left: 0px;
+    top: 50px;
+    height: 300px; }
   .mainInsumos .producto img {
     width: 250px; }
   .mainInsumos .producto__texto h1 {

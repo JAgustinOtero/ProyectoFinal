@@ -1,3 +1,15 @@
+.headerInsumos{
+    .imagen_principal{
+        img{
+            position: relative;
+            left: -200px;
+            top: 100px;
+            height: 400px;
+            z-index: -2;
+        }
+    }
+}
+
 .mainInsumos{
     overflow: hidden;
     .producto{
@@ -39,6 +51,16 @@
 
 }
 
+@media (max-width: 1400px){
+    .headerInsumos{
+        .imagen_principal{
+            img{
+                height: 350px;
+                left: -100px;
+            }
+        }
+    }
+}
 @media (max-width:  992px){
     .mainInsumos{
         .producto{
@@ -68,6 +90,15 @@
 
 
 @media (max-width:  576px){
+    .headerInsumos{
+        .imagen_principal{
+            img{
+                left: 0px;
+                top: 50px;
+                height: 300px;
+            }
+        }
+    }
     .mainInsumos{
         .producto{
             img{

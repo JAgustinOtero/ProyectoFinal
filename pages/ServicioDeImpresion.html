@@ -24,7 +24,7 @@
     <title>Servicio de Impresion</title>
   </head>
   <body>
-    <header class="container-fluid pt-4 insumos_header text-light">
+    <header class="container-fluid pt-4 insumos_header text-light ServicioHeader">
       <!-- NAVBAR CANVAS-->
       <nav class="navbar navbar-expand-lg">
         <!-- BOTON DE TOOGLE -->
@@ -108,16 +108,20 @@
         </div>
       </nav>
       <!-- FIN NAVBAR CANVAS -->
-
-      <div class="titulo h-50 w-100 ps-5 pt-5">
-        <div class="titulo__principal">
-          <h1>Impresiones</h1>
-          <h2 class="title-Shadow">Impresiones</h2>
+      <div class="row">
+        <div class="titulo h-50 col-xlg-6 col-sm-11 col-12 ps-5 pt-5">
+          <div class="titulo__principal">
+            <h1>Impresiones</h1>
+            <h2 class="title-Shadow">Impresiones</h2>
+          </div>
+          <p>Imprimi todo lo que necesites en nuestra granja de impresoras 3D </p>
+          <a href="https://wa.me/541168652472" class="btn">Pedi una Cotización</a>
         </div>
-        <p>Imprimi todo lo que necesites en nuestra granja de impresoras 3D </p>
-        <a href="https://wa.me/541168652472" class="btn">Pedi una Cotización</a>
+        <div class="imagen_principal h-100 col-xlg-6 col-sm-1 col-12 d-flex justify-content-center">
+          <img src="../assets/images/la-impresion-3d.webp" alt="ender3">
+        </div>
       </div>
-      
+
       <div class="w-100 text-center srolldown mt-5">
         <p class="fs-3">Scroll down</p>
         <img src="../assets/images/arrow-down-svgrepo-com.svg" alt="arrowdown" height="50px" width="200px"  class="">
@@ -129,10 +133,22 @@
         <h1 class="text-light text-center">MUESTRAS</h1>
         <div class="Trabajos__Muestras" >
           <div class="Trabajos__Muestras__Imagenes">
-            <img src="../assets/images/IMG-20230328-WA0006.webp" alt="muestraimpresion3d1" class="shadow-lg ">
-            <img src="../assets/images/IMG-20230328-WA0008.webp" alt="muestraimpresion3d2" class="shadow-lg ">
-            <img src="../assets/images/IMG-20230425-WA0007.webp" alt="muestraimpresion3d3" class="shadow-lg ">
-            <img src="../assets/images/IMG-20230705-WA0000.webp" alt="muestraimpresion3d4" class="shadow-lg ">
+            <div class="d-flex flex-column align-items-center col-12 col-sm-6 col-xl-3">
+              <img src="../assets/images/IMG-20230328-WA0006.webp" alt="muestraimpresion3d1" class="shadow-lg ">
+              <p class="p-4">Impresion de partes para moldes dedicados a la industria metalurgica</p>
+            </div>
+            <div class="d-flex flex-column align-items-center col-12 col-sm-6 col-xl-3">
+              <img src="../assets/images/IMG-20230328-WA0008.webp" alt="muestraimpresion3d2" class="shadow-lg ">
+              <p class="p-4">Impresion de materiales tecnicos de alta resistencia a impactos y temperatura</p>
+            </div>
+            <div class="d-flex flex-column align-items-center col-12 col-sm-6 col-xl-3">
+              <img src="../assets/images/IMG-20230425-WA0007.webp" alt="muestraimpresion3d3" class="shadow-lg ">
+              <p class="p-4">Impresion de modelados artisticos y esculturas decorativas</p>
+            </div>
+            <div class="d-flex flex-column align-items-center col-12 col-sm-6 col-xl-3">
+              <img src="../assets/images/IMG-20230705-WA0000.webp" alt="muestraimpresion3d4" class="shadow-lg ">
+              <p class="p-4">Impresion de maquetas y modelos arquitectonicos</p>
+            </div>
           </div>
         </div>
       </section>

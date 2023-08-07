@@ -1,3 +1,15 @@
+.ServicioHeader{
+    .imagen_principal{
+        img{
+            position: relative;
+            left: -200px;
+            top: 130px;
+            z-index: -2;
+            height: 400px;
+        }
+    }
+}
+
 .ServiciosMain{
     .Trabajos{
         h1{
@@ -6,6 +18,7 @@
         }
         &__Muestras
         {
+            color: white;
             &__Imagenes{
                 display: flex;
                 justify-content: space-evenly;
@@ -39,7 +52,7 @@
         }
     }
     .Servicio{
-        height: 120vh;
+        // height: 120vh;
         position: relative;
         overflow: hidden;
     }
@@ -85,8 +98,15 @@
 
 
 @media (max-width: 1400px){
-
-} 
+    .ServicioHeader{
+        .imagen_principal{
+            img{
+                height: 350px;
+                left: -100px;
+            }
+        }
+    }
+}
 
 @media (max-width: 1200px){
     .ServiciosMain{
@@ -113,6 +133,15 @@
 }
 
 @media (max-width: 580px){
+    .ServicioHeader{
+        .imagen_principal{
+            img{
+                left: 0px;
+                top: 50px;
+                height: 300px;
+            }
+        }
+    }
     .ServiciosMain{
         .Trabajos{
             h1{
